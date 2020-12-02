@@ -5,9 +5,6 @@ import math
 import numpy as np
 import pickle
 import cv2
-import matplotlib.pyplot as plt
-from matplotlib import style
-import time
 
 
 
@@ -18,7 +15,6 @@ pygame.font.init()
 # Reward variables
 MOVE_PENALTY = 0.5
 FOOD_REWARD = 25
-ENEMY_PENALTY = 100
 DEATH_PENALTY = 100
 
 # Game variables
@@ -35,7 +31,7 @@ RIGHT = (1,0)
 MOVES = {0:UP, 1:DOWN, 2:LEFT, 3:RIGHT}
 
 SQUARE_COLOR = (80,80,80)
-SNAKE_COLOR = ((154,205,50), (50,50,250))
+SNAKE_COLOR = ((154,205,50), (50,50,250), (50,0,250))
 FOOD_COLOR = (255,69,0)
 
 class Snake():
@@ -63,26 +59,23 @@ class Snake():
 
     def turn(self, point):
         if self.length > 1 and (point[0] * -1, point[1] * -1) == self.direction:
-            print("Snake wants to run into body")
+            #print("Snake wants to run into body")
             return
         else:
             self.direction = point
 
-    '''Need to add if snake runs into other snakes head, both snakes die and if snake runs into other snakes 
-        tail, only this snake dies'''
+
     def move(self):
         current = self.get_head_position()
-        if self.snake_id == 0:
+        if self.snake_id == 0 or self.snake_id == 2:
             x,y = self.direction
         else:
             x, y = random.choice([UP, DOWN, LEFT, RIGHT])
         newPosition =  ((current[0]+x), (current[1]+y))
 
-
         # if snake catches its own tail game is ended
         if len(self.positions) > 2 and newPosition in self.positions[2:]:
             self.reset()
-
         # if snake runs into border game is ended
         elif newPosition[0] >= SIZE or newPosition[0] < 0 or newPosition[1] >= SIZE or newPosition[1] < 0 :
             self.reset()
@@ -101,7 +94,7 @@ class Snake():
         self.length = 1
         self.positions = [((SIZE // 2), (SIZE // 2))]
         self.direction = random.choice([UP, DOWN, LEFT, RIGHT])
-        self.score = -DEATH_PENALTY
+        self.score -= DEATH_PENALTY
         self.reward = -DEATH_PENALTY
         self.x = self.positions[0][0]
         self.y = self.positions[0][1]
@@ -145,13 +138,13 @@ class Snake():
     def action(self, action_space, algorithm):
         choice = action_space[0]
         if algorithm == "QL":
-            action_space_indecies = action_space.argsort()[-3:][::-1]
-            choice = action_space_indecies[0]
-            choice_direction = MOVES.get(choice)
-            #print("First Choice:", choice)
-            if self.length > 1 and (choice_direction[0] * -1, choice_direction[1] * -1) == self.direction:
-                choice = action_space_indecies[1]
-                #print("Second Choice:", choice)
+            if len(action_space) > 1:
+                action_space_indecies = action_space.argsort()[-3:][::-1]
+                choice = action_space_indecies[0]
+                choice_direction = MOVES.get(choice)
+                #print("First Choice:", choice)
+                if self.length > 1 and (choice_direction[0] * -1, choice_direction[1] * -1) == self.direction:
+                    choice = action_space_indecies[1]
 
         # Choice is either 0,1,2,3 uses dictionary MOVES
         self.turn(MOVES.get(choice))
@@ -192,8 +185,45 @@ def drawGrid(surface):
             r = pygame.Rect((x* GRIDSIZE, y* GRIDSIZE), (GRIDSIZE,GRIDSIZE))
             pygame.draw.rect(surface, SQUARE_COLOR, r)
 
+###############################################################
+#####################   UTILS   ###############################
+
+# determines whether snake1 ran into snake2 and outputs True or False
+def ranIntoSnake(snake1: Snake, snake2: Snake):
+    return snake1.get_head_position() in snake2.positions
+
+# resets snakes according to collisions
+def handleSnakeCollisions(snake1: Snake, snake2: Snake):
+    if snake1.get_head_position() == snake2.get_head_position():
+        snake1.reset()
+        snake2.reset()
+    if snake1.get_head_position() in snake2.positions[1:]:
+        snake1.reset()
+    if snake2.get_head_position() in snake1.positions[1:]:
+        snake2.reset()
+
+# determines whether given snake ran into food
+def ranIntoFood(snake1: Snake, food: Food):
+    return snake1.get_head_position() == food.position
+
+# handles food position and snake behavior if Food is eaten
+def handleFoodEating(snake1: Snake, snake2: Snake, food: Food):
+    if snake1.get_head_position() == food.position:
+        snake1.length += 1
+        # food score relative and food reward absolute
+        snake1.score += FOOD_REWARD
+        snake1.reward = FOOD_REWARD
+        food.randomize_position([snake1, snake2])
+    if snake2.get_head_position() == food.position:
+        snake2.length += 1
+        snake2.score += FOOD_REWARD
+        snake2.reward = FOOD_REWARD
+        food.randomize_position([snake1, snake2])
+
 def manhattan_distance(x1,y1,x2,y2):
     return abs(x1 - x2) + abs(y1 - y2)
+
+###############################################################
 
 def main():
     pygame.init()
@@ -218,13 +248,8 @@ def main():
         drawGrid(surface)
         snake.move()
         snake2.move()
-        if snake.get_head_position() == food.position:
-            snake.length += 1
-            snake.score += FOOD_REWARD
-            food.randomize_position([snake,snake2])
-        if snake2.get_head_position() == food.position:
-            snake2.length += 1
-            snake2.score += FOOD_REWARD
+        handleSnakeCollisions(snake, snake2)
+        handleFoodEating(snake,snake2,food)
         snake.draw(surface)
         snake2.draw(surface)
         food.draw(surface)
@@ -237,3 +262,5 @@ def main():
 
     print("Snake Player Final Score:", snake.score)
     print("Snake AI Final Score:", snake2.score)
+
+main()
