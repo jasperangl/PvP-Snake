@@ -101,7 +101,7 @@ def displayRL(player,food,enemy):
 for episode in range(HM_EPISODES):
     player = Snake(0)
     enemy = Snake(1)
-    food = Food([player])
+    food = Food([player, enemy])
     show = False
     if episode % SHOW_EVERY == 0:
         print(f"on #{episode}, epsilon is {epsilon}")
@@ -114,7 +114,7 @@ for episode in range(HM_EPISODES):
     episode_reward = 0
     episode_score = 0
     for i in range(MAX_STEPS):
-        obs = (player-food,player-enemy)
+        obs = (player-food, player-enemy)
         #obs = (player-food)
         enemy.positions = [(random.randint(0, SIZE - 1), random.randint(0, SIZE - 1))]
         if np.random.random() > epsilon:

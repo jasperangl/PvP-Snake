@@ -9,7 +9,7 @@ from main import SCREEN_WIDTH, SCREEN_HEIGHT, drawGrid, FOOD_REWARD, Food, Snake
 
 '''31000 episode is best'''
 '''20000 is decent too'''
-Q_TABLE = 'q_tables/' + 'qtable-100000ep-wEnemy-2D.p'
+Q_TABLE = 'q_tables/' + 'qtable-100000ep.p'
 
 with open(Q_TABLE, "rb") as f:
     q_table = pickle.load(f)
@@ -37,7 +37,7 @@ def display():
         enemy.handle_keys()
         enemy.move()
         obs = (player - food, player - enemy)
-        # no random action in display phase
+        # no random action in display phase # may possibly change
         action_space = np.array(q_table[obs]).copy()
         print("Position:", player.get_head_position())
         print(action_space)

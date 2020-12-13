@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aafd836f-11eb-41cb-8dde-1aca8e8f629d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PvP-Snake.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/deep_qlearning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/try1/game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/try1/neural_net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/try1/run_game.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Own snake game.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/play_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/play_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qlearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/qlearning.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="9d2392d7-68d2-4ac2-9cec-44f1547df432" />
+  <component name="ProjectId" id="1l6vm99pMEU49iYDeNPT8fMAM44" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/play_agent.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn" />
+      <recent name="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn\try1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.play_agent">
+    <configuration name="deep_qlearning (test)" type="PythonConfigurationType" factoryName="Python">
+      <module name="PvP-Snake" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\unnas\AppData\Local\Microsoft\WindowsApps\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dqn" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dqn/deep_qlearning.py" />
+      <option name="PARAMETERS" value="-test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="deep_qlearning (train)" type="PythonConfigurationType" factoryName="Python">
+      <module name="PvP-Snake" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\unnas\AppData\Local\Microsoft\WindowsApps\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dqn" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dqn/deep_qlearning.py" />
+      <option name="PARAMETERS" value="-train" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="deep_qlearning (visual)" type="PythonConfigurationType" factoryName="Python">
+      <module name="PvP-Snake" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\unnas\AppData\Local\Microsoft\WindowsApps\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dqn" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dqn/deep_qlearning.py" />
+      <option name="PARAMETERS" value="-vis" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="neural_net" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PvP-Snake" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\unnas\AppData\Local\Microsoft\WindowsApps\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dqn" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn\try1\neural_net.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="play_agent" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PvP-Snake" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\unnas\AppData\Local\Microsoft\WindowsApps\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/play_agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_game" type="ShConfigurationType">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/dqn/run_game.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.neural_net" />
+      <item itemvalue="Python.deep_qlearning (train)" />
+      <item itemvalue="Python.deep_qlearning (visual)" />
+      <item itemvalue="Python.deep_qlearning (test)" />
+      <item itemvalue="Python.play_agent" />
+      <item itemvalue="Shell Script.run_game" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aafd836f-11eb-41cb-8dde-1aca8e8f629d" name="Default Changelist" comment="" />
+      <created>1606930511683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606930511683</updated>
+      <workItem from="1606930513523" duration="3394000" />
+      <workItem from="1607093775206" duration="3464000" />
+      <workItem from="1607834437911" duration="22256000" />
+      <workItem from="1607882316025" duration="6120000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="0" width="1092" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607888515801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607094375870" />
+    <state x="414" y="0" width="1092" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888515801" />
+    <state x="711" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607840095314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607094887024" />
+    <state x="711" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607840095314" />
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1607844621503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607844621503" />
+    <state x="715" y="222" key="#xdebugger.evaluate" timestamp="1607854885395">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607854885395" />
+    <state x="740" y="286" key="FileChooserDialogImpl" timestamp="1607888512827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607094373552" />
+    <state x="740" y="286" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888512827" />
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom" timestamp="1607888282595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607151187050" />
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888282595" />
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808371" />
+    <state width="1877" height="291" key="GridCell.Tab.0.center" timestamp="1607888282595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607151187048" />
+    <state width="1877" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888282595" />
+    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808371" />
+    <state width="1877" height="291" key="GridCell.Tab.0.left" timestamp="1607888282595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607151187045" />
+    <state width="1877" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888282595" />
+    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808371" />
+    <state width="1877" height="291" key="GridCell.Tab.0.right" timestamp="1607888282595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607151187049" />
+    <state width="1877" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888282595" />
+    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808371" />
+    <state width="1877" height="263" key="GridCell.Tab.1.bottom" timestamp="1607885230413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="263" key="GridCell.Tab.1.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607885230413" />
+    <state width="1877" height="263" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808359" />
+    <state width="1877" height="263" key="GridCell.Tab.1.center" timestamp="1607885230413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="263" key="GridCell.Tab.1.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607885230413" />
+    <state width="1877" height="263" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808359" />
+    <state width="1877" height="263" key="GridCell.Tab.1.left" timestamp="1607885230413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="263" key="GridCell.Tab.1.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607885230413" />
+    <state width="1877" height="263" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808359" />
+    <state width="1877" height="263" key="GridCell.Tab.1.right" timestamp="1607885230413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="263" key="GridCell.Tab.1.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607885230413" />
+    <state width="1877" height="263" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808359" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1607839261788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1606930794342" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607839261788" />
+    <state x="476" y="100" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1607845265164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="476" y="100" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607845265164" />
+    <state x="0" y="-882" width="1516" height="646" maximized="true" key="dock-window-1" timestamp="1607849739033">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1532" height="1028" key="dock-window-1/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607095564721" />
+    <state x="0" y="-882" width="1516" height="646" maximized="true" key="dock-window-1/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607849739033" />
+    <state x="14" y="249" width="1516" height="727" key="dock-window-2" timestamp="1607882619993">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="14" y="249" width="1516" height="727" key="dock-window-2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607882619993" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607842704420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607842704420" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="python-exception">
+          <properties notifyOnTerminate="true" exception="RuntimeError">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </breakpoint>
+        <breakpoint enabled="true" log-message="true" log-stack="true" type="python-exception">
+          <properties notifyOnlyOnFirst="true" notifyOnTerminate="true" ignoreLibraries="true" exception="RuntimeWarning">
+            <option name="ignoreLibraries" value="true" />
+            <option name="notifyOnTerminate" value="true" />
+            <option name="notifyOnlyOnFirst" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dqn/deep_qlearning.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dqn/deep_qlearning.py</url>
+          <line>138</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="player.positions" language="Python" />
+        <watch expression="np.linalg.norm(vector)" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__train_.coverage" NAME="deep_qlearning (train) Coverage Results" MODIFIED="1607887262104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$DNQ.coverage" NAME="deep_qlearning (train) Coverage Results" MODIFIED="1607856388158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$neural_net.coverage" NAME="neural_net Coverage Results" MODIFIED="1607849196766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__visual_.coverage" NAME="deep_qlearning (visual) Coverage Results" MODIFIED="1607888282584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$play_dqn_agent.coverage" NAME="play_dqn_agent Coverage Results" MODIFIED="1607849212376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$qlearning.coverage" NAME="qlearning Coverage Results" MODIFIED="1607094380551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__test_.coverage" NAME="deep_qlearning (test) Coverage Results" MODIFIED="1607854892334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+  </component>
+</project>

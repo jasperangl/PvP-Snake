@@ -4,18 +4,13 @@ import random
 import math
 import numpy as np
 import pickle
-import cv2
-
-
 
 pygame.font.init()
 
-
-
 # Reward variables
-MOVE_PENALTY = 0.5
-FOOD_REWARD = 25
-DEATH_PENALTY = 100
+MOVE_PENALTY = 0.05
+FOOD_REWARD = 5
+DEATH_PENALTY = 10
 
 # Game variables
 SIZE = 10
@@ -49,6 +44,25 @@ class Snake():
         self.x = self.positions[0][0]
         self.y = self.positions[0][1]
 
+    def init_positions(self):
+        self.direction = random.choice([UP, DOWN, LEFT, RIGHT])
+        # spawn snake 1 middle left and snake 2 middle right
+
+        position0 = (math.ceil((SIZE / 4) + self.snake_id * (SIZE / 2)), math.ceil(SIZE / 2))
+        position1 = (position0[0], position0[1] - 1) ## DOWN
+
+        # self.positions = [(math.ceil((SIZE / 4) + self.snake_id * (SIZE / 2)), math.ceil(SIZE / 2))]
+
+        if self.direction == LEFT:
+            position1 = (position0[0] + 1, position0[1])
+        elif self.positions == RIGHT:
+            position1 = (position0[0] - 1, position0[1])
+        elif self.positions == UP:
+            position1 = (position0[0], position0[1] + 1)
+
+        self.positions = [position0, position1]
+        self.length = 2
+
     # relative distance to other object with x,y properties
     def __sub__(self, other):
         return (self.x - other.x, self.y - other.y)
@@ -56,6 +70,8 @@ class Snake():
     def get_head_position(self):
         return self.positions[0]
 
+    def generate_observations(self):
+        return self.lives, self.score
 
     def turn(self, point):
         if self.length > 1 and (point[0] * -1, point[1] * -1) == self.direction:
@@ -64,8 +80,7 @@ class Snake():
         else:
             self.direction = point
 
-
-    def move(self):
+    def move(self, m_penalty = MOVE_PENALTY, d_penalty = DEATH_PENALTY):
         current = self.get_head_position()
         if self.snake_id == 0 or self.snake_id == 2:
             x,y = self.direction
@@ -75,13 +90,14 @@ class Snake():
 
         # if snake catches its own tail game is ended
         if len(self.positions) > 2 and newPosition in self.positions[2:]:
-            self.reset()
+            self.reset(penalty=d_penalty)
+
         # if snake runs into border game is ended
         elif newPosition[0] >= SIZE or newPosition[0] < 0 or newPosition[1] >= SIZE or newPosition[1] < 0 :
-            self.reset()
+            self.reset(penalty=d_penalty)
         # else we add new head position and pop the last one
         else:
-            self.reward -= MOVE_PENALTY
+            self.reward -= m_penalty
             self.positions.insert(0, newPosition)
             if len(self.positions) > self.length:
                 self.positions.pop()
@@ -89,13 +105,13 @@ class Snake():
             self.y = self.positions[0][1]
 
     '''In the future respawn can only happen if other snake is not on this spot'''
-    def reset(self):
+    def reset(self, penalty = DEATH_PENALTY):
         self.lives -= 1
         self.length = 1
         self.positions = [((SIZE // 2), (SIZE // 2))]
         self.direction = random.choice([UP, DOWN, LEFT, RIGHT])
-        self.score -= DEATH_PENALTY
-        self.reward = -DEATH_PENALTY
+        self.score -= penalty
+        self.reward = -penalty
         self.x = self.positions[0][0]
         self.y = self.positions[0][1]
 
@@ -105,7 +121,6 @@ class Snake():
             pygame.draw.rect(surface, self.color, r)
             pygame.draw.rect(surface, SQUARE_COLOR, r, 1)
 
-
     # handles key input in case someone plays the game themselves
     def handle_keys(self):
         for event in pygame.event.get():
@@ -113,7 +128,7 @@ class Snake():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
-            elif event.type == pygame.KEYDOWN and self.snake_id == 0:
+            elif event.type == pygame.KEYDOWN and (self.snake_id == 0 or self.snake_id == 2):
                 if event.key == pygame.K_UP:
                     self.turn(UP)
                 elif event.key == pygame.K_DOWN:
@@ -145,10 +160,14 @@ class Snake():
                 #print("First Choice:", choice)
                 if self.length > 1 and (choice_direction[0] * -1, choice_direction[1] * -1) == self.direction:
                     choice = action_space_indecies[1]
+            self.turn(MOVES.get(choice))
+            self.move()
 
-        # Choice is either 0,1,2,3 uses dictionary MOVES
         self.turn(MOVES.get(choice))
         self.move()
+
+        # Move choice is either 0,1,2,3 uses dictionary MOVES
+
 
 class Food():
     # Snakes is a list of all snakes
@@ -207,17 +226,17 @@ def ranIntoFood(snake1: Snake, food: Food):
     return snake1.get_head_position() == food.position
 
 # handles food position and snake behavior if Food is eaten
-def handleFoodEating(snake1: Snake, snake2: Snake, food: Food):
+def handleFoodEating(snake1: Snake, snake2: Snake, food: Food, reward=FOOD_REWARD):
     if snake1.get_head_position() == food.position:
         snake1.length += 1
         # food score relative and food reward absolute
-        snake1.score += FOOD_REWARD
-        snake1.reward = FOOD_REWARD
+        snake1.score += reward
+        snake1.reward = reward
         food.randomize_position([snake1, snake2])
     if snake2.get_head_position() == food.position:
         snake2.length += 1
-        snake2.score += FOOD_REWARD
-        snake2.reward = FOOD_REWARD
+        snake2.score += reward
+        snake2.reward = reward
         food.randomize_position([snake1, snake2])
 
 def manhattan_distance(x1,y1,x2,y2):
@@ -263,4 +282,4 @@ def main():
     print("Snake Player Final Score:", snake.score)
     print("Snake AI Final Score:", snake2.score)
 
-main()
+# main()

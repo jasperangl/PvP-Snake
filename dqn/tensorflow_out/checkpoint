@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\unnas\\Documents\\home\\Class\\CS4100\\PvP-Snake\\dqn\\tensorflow_out\\snake_dqn_2_6nodes_low_reward.tflearn"
+all_model_checkpoint_paths: "C:\\Users\\unnas\\Documents\\home\\Class\\CS4100\\PvP-Snake\\dqn\\tensorflow_out\\snake_dqn_2_6nodes_low_reward.tflearn"
