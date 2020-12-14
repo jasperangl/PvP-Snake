@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\unnas\\Documents\\home\\Class\\CS4100\\PvP-Snake\\dqn\\tfdata\\dqn-5k-games-5k-ep(4).tflearn"
+all_model_checkpoint_paths: "C:\\Users\\unnas\\Documents\\home\\Class\\CS4100\\PvP-Snake\\dqn\\tfdata\\dqn-5k-games-5k-ep(4).tflearn"

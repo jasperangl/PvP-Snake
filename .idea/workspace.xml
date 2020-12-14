@@ -20,20 +20,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafd836f-11eb-41cb-8dde-1aca8e8f629d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PvP-Snake.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dqn/deep_qlearning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dqn/try1/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dqn/try1/neural_net.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dqn/try1/run_game.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Own snake game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/play_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/play_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qlearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/qlearning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/SnakeGame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/graphs/dqn-5k-games-5k-ep(2)-scores.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/graphs/dqn-5k-games-5k-ep(4)-scores.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/graphs/dqn-5k-games-5k-ep-scores.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/graphs/dqn-5k-games-5k-eq(3).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/graphs/for-paper(2)-dqn-5k-games-5k-ep(4)-scores.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn/graphs/for-paper-dqn-5k-games-5k-ep(4)-scores.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/deep_qlearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/dqn/deep_qlearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2.tflearn.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2.tflearn.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2.tflearn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes.tflearn.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes.tflearn.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes.tflearn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes_high_reward.tflearn.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes_high_reward.tflearn.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes_high_reward.tflearn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes_low_reward.tflearn.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes_low_reward.tflearn.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_6nodes_low_reward.tflearn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_playing_around.tflearn.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_playing_around.tflearn.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_playing_around.tflearn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_reward50.tflearn.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_reward50.tflearn.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_reward50.tflearn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_reward50_2.tflearn.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_reward50_2.tflearn.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dqn/tensorflow_out/snake_dqn_2_just_enemy_head_reward50_2.tflearn.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +78,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/play_agent.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nn_2.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake" />
       <recent name="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn" />
       <recent name="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn\try1" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.play_agent">
+  <component name="RunManager" selected="Python.deep_qlearning (test)">
     <configuration name="deep_qlearning (test)" type="PythonConfigurationType" factoryName="Python">
       <module name="PvP-Snake" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,28 +158,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="neural_net" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="PvP-Snake" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\unnas\AppData\Local\Microsoft\WindowsApps\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dqn" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\unnas\Documents\home\Class\CS4100\PvP-Snake\dqn\try1\neural_net.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="play_agent" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PvP-Snake" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,7 +192,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.neural_net" />
       <item itemvalue="Python.deep_qlearning (train)" />
       <item itemvalue="Python.deep_qlearning (visual)" />
       <item itemvalue="Python.deep_qlearning (test)" />
@@ -214,7 +210,9 @@
       <workItem from="1606930513523" duration="3394000" />
       <workItem from="1607093775206" duration="3464000" />
       <workItem from="1607834437911" duration="22256000" />
-      <workItem from="1607882316025" duration="6120000" />
+      <workItem from="1607882316025" duration="7714000" />
+      <workItem from="1607894156835" duration="15518000" />
+      <workItem from="1607911006309" duration="5405000" />
     </task>
     <servers />
   </component>
@@ -234,11 +232,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="0" width="1092" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607888515801">
+    <state x="414" y="0" width="1092" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607909851513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607094375870" />
-    <state x="414" y="0" width="1092" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888515801" />
+    <state x="414" y="0" width="1092" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607909851513" />
     <state x="711" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607840095314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -252,54 +250,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607854885395" />
-    <state x="740" y="286" key="FileChooserDialogImpl" timestamp="1607888512827">
+    <state x="740" y="286" key="FileChooserDialogImpl" timestamp="1607896949036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607094373552" />
-    <state x="740" y="286" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888512827" />
-    <state width="1877" height="291" key="GridCell.Tab.0.bottom" timestamp="1607888282595">
+    <state x="740" y="286" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607896949036" />
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1607916434518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607151187050" />
-    <state width="1877" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888282595" />
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808371" />
-    <state width="1877" height="291" key="GridCell.Tab.0.center" timestamp="1607888282595">
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607910117719" />
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607916434518" />
+    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1607916434518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607151187048" />
-    <state width="1877" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888282595" />
-    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808371" />
-    <state width="1877" height="291" key="GridCell.Tab.0.left" timestamp="1607888282595">
+    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607910117719" />
+    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607916434518" />
+    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1607916434518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607151187045" />
-    <state width="1877" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888282595" />
-    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808371" />
-    <state width="1877" height="291" key="GridCell.Tab.0.right" timestamp="1607888282595">
+    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607910117719" />
+    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607916434518" />
+    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1607916434518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607151187049" />
-    <state width="1877" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607888282595" />
-    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808371" />
-    <state width="1877" height="263" key="GridCell.Tab.1.bottom" timestamp="1607885230413">
+    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607910117719" />
+    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607916434518" />
+    <state width="1877" height="373" key="GridCell.Tab.1.bottom" timestamp="1607909335925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="263" key="GridCell.Tab.1.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607885230413" />
+    <state width="1877" height="373" key="GridCell.Tab.1.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607909335925" />
     <state width="1877" height="263" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808359" />
-    <state width="1877" height="263" key="GridCell.Tab.1.center" timestamp="1607885230413">
+    <state width="1877" height="373" key="GridCell.Tab.1.center" timestamp="1607909335924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="263" key="GridCell.Tab.1.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607885230413" />
+    <state width="1877" height="373" key="GridCell.Tab.1.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607909335924" />
     <state width="1877" height="263" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808359" />
-    <state width="1877" height="263" key="GridCell.Tab.1.left" timestamp="1607885230413">
+    <state width="1877" height="373" key="GridCell.Tab.1.left" timestamp="1607909335924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="263" key="GridCell.Tab.1.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607885230413" />
+    <state width="1877" height="373" key="GridCell.Tab.1.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607909335924" />
     <state width="1877" height="263" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808359" />
-    <state width="1877" height="263" key="GridCell.Tab.1.right" timestamp="1607885230413">
+    <state width="1877" height="373" key="GridCell.Tab.1.right" timestamp="1607909335925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="263" key="GridCell.Tab.1.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607885230413" />
+    <state width="1877" height="373" key="GridCell.Tab.1.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607909335925" />
     <state width="1877" height="263" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607856808359" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1607839261788">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -310,19 +308,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="476" y="100" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607845265164" />
-    <state x="0" y="-882" width="1516" height="646" maximized="true" key="dock-window-1" timestamp="1607849739033">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state x="571" y="309" width="1499" height="1028" key="dock-window-1" timestamp="1607896764550">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" width="1532" height="1028" key="dock-window-1/0.0.1920.1040/-444.-1080.1920.1040@0.0.1920.1040" timestamp="1607095564721" />
-    <state x="0" y="-882" width="1516" height="646" maximized="true" key="dock-window-1/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607849739033" />
+    <state x="571" y="309" width="1499" height="1028" key="dock-window-1/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607896764550" />
     <state x="14" y="249" width="1516" height="727" key="dock-window-2" timestamp="1607882619993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="14" y="249" width="1516" height="727" key="dock-window-2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607882619993" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607842704420">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607909133851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607842704420" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1607909133851" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -346,16 +344,6 @@
           <line>108</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dqn/deep_qlearning.py</url>
-          <line>121</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dqn/deep_qlearning.py</url>
-          <line>138</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -366,12 +354,14 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__train_.coverage" NAME="deep_qlearning (train) Coverage Results" MODIFIED="1607887262104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__train_.coverage" NAME="deep_qlearning (train) Coverage Results" MODIFIED="1607915426642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
     <SUITE FILE_PATH="coverage/PvP_Snake$DNQ.coverage" NAME="deep_qlearning (train) Coverage Results" MODIFIED="1607856388158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
     <SUITE FILE_PATH="coverage/PvP_Snake$neural_net.coverage" NAME="neural_net Coverage Results" MODIFIED="1607849196766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
-    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__visual_.coverage" NAME="deep_qlearning (visual) Coverage Results" MODIFIED="1607888282584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__visual_.coverage" NAME="deep_qlearning (visual) Coverage Results" MODIFIED="1607910117706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
     <SUITE FILE_PATH="coverage/PvP_Snake$play_dqn_agent.coverage" NAME="play_dqn_agent Coverage Results" MODIFIED="1607849212376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$play_agent.coverage" NAME="play_agent Coverage Results" MODIFIED="1607888561480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PvP_Snake$qlearning.coverage" NAME="qlearning Coverage Results" MODIFIED="1607094380551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__test_.coverage" NAME="deep_qlearning (test) Coverage Results" MODIFIED="1607854892334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$deep_qlearning__test_.coverage" NAME="deep_qlearning (test) Coverage Results" MODIFIED="1607916434509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dqn" />
+    <SUITE FILE_PATH="coverage/PvP_Snake$nn_2.coverage" NAME="nn_2 Coverage Results" MODIFIED="1607909636039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
