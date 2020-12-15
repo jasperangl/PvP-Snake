@@ -2,31 +2,6 @@ import torch as T
 import torch.nn.functional as F
 import torch.optim as optim
 
-
-class GenericNetwork(T.nn.Module):
-    def __init__(self, alpha, input_dims, fc1_dims, fc2_dims,
-                 n_actions):
-        super(GenericNetwork, self).__init__()
-        self.input_dims = input_dims
-        self.fc1_dims = fc1_dims
-        self.fc2_dims = fc2_dims
-        self.n_actions = n_actions
-        self.fc1 = T.nn.Linear(self.input_dims, self.fc1_dims)
-        self.fc2 = T.nn.Linear(self.fc1_dims, self.fc2_dims)
-        self.fc3 = T.nn.Linear(self.fc2_dims, n_actions)
-        self.optimizer = optim.Adam(self.parameters(), lr=alpha)
-
-        self.device = T.device('cpu')
-        self.to(self.device)
-
-    def forward(self, observation):
-        state = T.Tensor(observation).to(self.device)
-        x = F.relu(self.fc1(state))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
-        return x
-
-
 class ActorCriticNetwork(T.nn.Module):
     def __init__(self, alpha, input_dims, fc1_dims, fc2_dims,
                  n_actions):
@@ -76,16 +51,17 @@ class ActorCriticAgent(object):
         return action.item()
 
     def learn(self, state, reward, new_state, done):
+        # Getting rid of intermediate steps
         self.actor_critic.optimizer.zero_grad()
 
-        _, critic_value_ = self.actor_critic.forward(new_state)
         _, critic_value = self.actor_critic.forward(state)
+        _, new_critic_value = self.actor_critic.forward(new_state)
         reward = T.tensor(reward, dtype=T.float).to(self.actor_critic.device)
 
-        delta = reward + self.gamma * critic_value_ * (1 - int(done)) - critic_value
+        delta = reward + self.gamma * new_critic_value - critic_value
 
         actor_loss = -self.log_probs * delta
-        critic_loss = delta ** 2
+        critic_loss = 0.5 * delta ** 2
 
         (actor_loss + critic_loss).backward()
         self.actor_critic.optimizer.step()

@@ -122,6 +122,7 @@ def getObsSmall(snakes: list, food: Food):
     food_direction = get_food_direction_vector(player, food)
     enemy_direction = get_enemy_direction_vector(player, enemy)
     food_distance = get_food_distance(player, food)
+    enemy_distance = get_enemy_distance(player, enemy)
     # Leave it out for now
     #enemy_center_direction = get_food_direction_vector(snake, self.get_snake_center(enemy))
 
@@ -137,8 +138,8 @@ def getObsSmall(snakes: list, food: Food):
                      int(barrier_left),
                      int(barrier_right),
                      food_angle,
-                     enemy_angle,
-                     food_distance
+                     food_distance,
+                     enemy_distance
                      # enemy_cog_angle,
                      # player_cog_distance
                      ])
@@ -154,6 +155,8 @@ def normalize_vector(vector):
         return vector
     return vector / np.linalg.norm(vector)
 
+def get_enemy_distance(snake, enemy):
+    return np.linalg.norm(get_enemy_direction_vector(snake, enemy))
 
 def get_food_distance(snake, food):
     return np.linalg.norm(get_food_direction_vector(snake, food))
@@ -245,13 +248,14 @@ def render(agent, obs_type: str, board_size: int):
 
 
 
-def plotLearning(scores, filename, x=None, window=5, ylabel= str):
+def plotLearning(scores, filename, title, x=None, window=5, ylabel= str):
     N = len(scores)
     running_avg = np.empty(N)
     for t in range(N):
 	    running_avg[t] = np.mean(scores[max(0, t-window):(t+1)])
     if x is None:
         x = [i for i in range(N)]
+    plt.title = title
     plt.ylabel(ylabel)
     plt.xlabel('Games')
     plt.plot(x, running_avg)

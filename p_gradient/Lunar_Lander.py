@@ -12,14 +12,14 @@ from main import Snake, Food, handleSnakeCollisions, handleFoodEating, DEATH_PEN
 
 OBS_GRID_SIZE = 5
 num_episodes = 5000
-SHOW_EVERY = 2000
-obs_type = "Grid"
+SHOW_EVERY = 1000
+obs_type = "Small"
 modelname = f"AC-{obs_type}-{num_episodes}"
 
 if __name__ == '__main__':
     #agent = PolicyGradientAgent(lr=0.001, input_dims=OBS_GRID_SIZE**2, GAMMA=0.99,
                                # n_actions=4, layer1_size=512, layer2_size=512)
-    agentAC = ActorCriticAgent(alpha=0.001, input_dims=OBS_GRID_SIZE**2, gamma=0.99, layer1_size=128, layer2_size=64, n_actions=4)
+    agentAC = ActorCriticAgent(alpha=0.005, input_dims=6, gamma=0.5, layer1_size=128, layer2_size=64, n_actions=4)
 
     # following gym environment guidelines
     def step(snakes: list, food: Food, action, obs_type: str):
@@ -55,8 +55,8 @@ if __name__ == '__main__':
         done = False
         score = 0
         # returns a numpy array of the state we care about
-        observation = getObsGrid(snakes=[player], food=food, size=OBS_GRID_SIZE, fullGrid=False)
-        #observation = getObsSmall([player, enemy], food)
+        #observation = getObsGrid(snakes=[player], food=food, size=OBS_GRID_SIZE, fullGrid=False)
+        observation = getObsSmall([player, enemy], food)
         n_steps = 0
         while not done and n_steps < 100:
             n_steps += 1
@@ -73,8 +73,8 @@ if __name__ == '__main__':
             #print(f"on #{i}, epsilon is {lr}")
             print(f"\n {i} ep mean: {np.mean(score_history[-SHOW_EVERY:])}")
             print(f"{i} steps mean: {np.mean(n_steps_history[-SHOW_EVERY:])}")
-        if i % (SHOW_EVERY) == 0:
-            render(agentAC, obs_type, board_size=OBS_GRID_SIZE)
+        # if i % (SHOW_EVERY) == 0:
+        #     render(agentAC, obs_type, board_size=OBS_GRID_SIZE)
 
     T.save(agentAC.actor_critic, "model/" + modelname)
 
