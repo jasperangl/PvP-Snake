@@ -1,5 +1,7 @@
-### Running DQN Agent (7-input neural netwok))
-Tested w. Python 3.8
+### Running DQN Agent (7-input neural network)
+###### Tested w. Python 3.8
+
+Move to the `dqn` folder
 
 Set `FILENAME` in **deep_qlearining.py** to the tensorflow model that you want to use or create (must be in the **tfdata/** dir)
 
