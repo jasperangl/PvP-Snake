@@ -189,6 +189,21 @@ def drawGrid(surface):
             r = pygame.Rect((x* GRIDSIZE, y* GRIDSIZE), (GRIDSIZE,GRIDSIZE))
             pygame.draw.rect(surface, SQUARE_COLOR, r)
 
+def drawSnakeVision(surface, snake:Snake):
+    center = snake.get_head_position()
+    vectFactor = 2
+    spanV1 = (center[0] - vectFactor, center[1] - vectFactor)
+    spanV2 = (center[0] + vectFactor, center[1] + vectFactor)
+    # print("Center:", center)
+    # print("Span 1:", spanV1)
+    # print("Span 2:", spanV2)
+    for x in range(spanV1[0], spanV2[0] + 1):
+        for y in range(spanV1[1], spanV2[1] + 1):
+            r = pygame.Rect((x* GRIDSIZE, y* GRIDSIZE), (GRIDSIZE,GRIDSIZE))
+            pygame.draw.rect(surface, colorBrighten(SQUARE_COLOR), r)
+
+def colorBrighten(color):
+    return (color[0]+25,color[1]+25,color[2]+25)
 ###############################################################
 #####################   UTILS   ###############################
 
@@ -224,6 +239,34 @@ def manhattan_distance(x1,y1,x2,y2):
     return abs(x1 - x2) + abs(y1 - y2)
 
 ###############################################################
+
+def test_env():
+    pygame.init()
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
+    surface = pygame.Surface(screen.get_size())
+    surface = surface.convert()
+    drawGrid(surface)
+
+    snake = Snake(0)
+    snake2 = Snake(1)
+    food = Food([snake, snake2])
+    snake.positions = [(3,7),(3,6),(3,5),(4,5),(5,5)]
+    snake2.positions = [(7,7),(8,7),(9,7)]
+    food.position = (5, 9)
+    drawSnakeVision(surface, snake)
+
+
+    myfont = pygame.font.SysFont("bahnschrift", 20)
+    while (snake.lives > 0 and snake2.lives > 0):
+        snake.draw(surface)
+        snake2.draw(surface)
+        food.draw(surface)
+        screen.blit(surface, (0, 0))
+        text1 = myfont.render("Score Player {}".format(10), 1, (250, 250, 250))
+        text2 = myfont.render("Score AI {0}".format(-5), 1, (250, 250, 250))
+        screen.blit(text1, (5, 10))
+        screen.blit(text2, (SCREEN_WIDTH - 120, 10))
+        pygame.display.update()
 
 def main():
     pygame.init()

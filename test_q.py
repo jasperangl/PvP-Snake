@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 from main import SCREEN_WIDTH, SCREEN_HEIGHT, drawGrid, FOOD_REWARD, Food, Snake, handleSnakeCollisions, \
     handleFoodEating, SIZE
-from p_gradient.Lunar_Lander import getObsGrid
+from p_gradient.pg_main import getObsGrid
 from p_gradient.utils import getObsSmall, get_food_distance, enemyMovement
 from qlearning import displayRL
 
