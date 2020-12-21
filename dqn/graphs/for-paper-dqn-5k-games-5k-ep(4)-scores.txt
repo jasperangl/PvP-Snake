@@ -1,0 +1,1447 @@
+C:\Users\unnas\AppData\Local\Microsoft\WindowsApps\python.exe C:/Users/unnas/Documents/home/Class/CS4100/PvP-Snake/dqn/deep_qlearning.py -test
+pygame 2.0.0 (SDL 2.0.12, python 3.8.6)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+2020-12-13 22:24:11.854626: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudart64_101.dll'; dlerror: cudart64_101.dll not found
+2020-12-13 22:24:11.854990: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+WARNING:tensorflow:From C:\Users\unnas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From C:\Users\unnas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\tflearn\initializations.py:164: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2020-12-13 22:24:14.469111: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll
+2020-12-13 22:24:15.363649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce GTX 1050 computeCapability: 6.1
+coreClock: 1.493GHz coreCount: 5 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2020-12-13 22:24:15.364206: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudart64_101.dll'; dlerror: cudart64_101.dll not found
+2020-12-13 22:24:15.364654: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cublas64_10.dll'; dlerror: cublas64_10.dll not found
+2020-12-13 22:24:15.365005: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2020-12-13 22:24:15.365356: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2020-12-13 22:24:15.365707: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cusolver64_10.dll'; dlerror: cusolver64_10.dll not found
+2020-12-13 22:24:15.366053: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cusparse64_10.dll'; dlerror: cusparse64_10.dll not found
+2020-12-13 22:24:15.366610: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudnn64_7.dll'; dlerror: cudnn64_7.dll not found
+2020-12-13 22:24:15.366814: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2020-12-13 22:24:15.367841: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-12-13 22:24:15.380639: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x18381ffcea0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-12-13 22:24:15.381061: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-12-13 22:24:15.381552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-13 22:24:15.381858: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]
+2020-12-13 22:24:15.562835: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-13 22:24:15.563106: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]
+2020-12-13 22:24:15.585435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-13 22:24:15.585699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]
+2020-12-13 22:24:15.645920: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-13 22:24:15.646185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]
+--- 0 / 200 ---
+28.2 in 74 steps
+[[4, 10], [4, 9], [3, 9], [3, 8], [3, 7]]
+[[6, 2], [6, 3], [7, 3]]
+[5, 10]
+[ 0.          0.          0.          0.25       -0.39758362  6.70820393]
+[array([[1.1256948]], dtype=float32), array([[0.9255176]], dtype=float32), array([[0.3734551]], dtype=float32)]
+--- 1 / 200 ---
+30.5 in 51 steps
+[[3, 2], [4, 2], [4, 1], [3, 1], [3, 2], [2, 2], [2, 3], [2, 4]]
+[[2, 8], [3, 8], [4, 8]]
+[1, 3]
+[1.         0.         0.         0.39758362 0.05256846 6.        ]
+[array([[0.8765912]], dtype=float32), array([[0.7193577]], dtype=float32), array([[0.5737434]], dtype=float32)]
+--- 2 / 200 ---
+24.3 in 62 steps
+[[1, 8], [1, 7], [1, 6], [2, 6]]
+[[2, 8], [1, 8], [1, 9], [2, 9]]
+[2, 10]
+[ 1.          0.          0.         -0.10241638  0.          1.90394328]
+[array([[0.5051023]], dtype=float32), array([[0.8860142]], dtype=float32), array([[0.83921146]], dtype=float32)]
+--- 3 / 200 ---
+7.2 in 29 steps
+[[7, 9], [6, 9], [6, 8]]
+[[9, 7], [8, 7], [7, 7]]
+[10, 10]
+[ 0.          0.          0.         -0.42202087 -0.5         1.41421356]
+[array([[0.8984678]], dtype=float32), array([[0.8368207]], dtype=float32), array([[0.9022084]], dtype=float32)]
+--- 4 / 200 ---
+31.9 in 88 steps
+[[8, 10], [8, 9], [7, 9]]
+[[9, 6], [8, 6], [7, 6]]
+[10, 10]
+[ 0.          0.          0.          0.14758362 -0.5         3.16227766]
+[array([[0.99709255]], dtype=float32), array([[0.9770271]], dtype=float32), array([[0.45276326]], dtype=float32)]
+--- 5 / 200 ---
+28.9 in 67 steps
+[[4, 3], [3, 3], [3, 4], [3, 5]]
+[[6, 5], [6, 4], [6, 3]]
+[8, 2]
+[0.         0.         0.         0.43716704 0.5        2.33333333]
+[array([[0.946023]], dtype=float32), array([[0.7997772]], dtype=float32), array([[0.8685593]], dtype=float32)]
+--- 6 / 200 ---
+26.2 in 43 steps
+[[7, 10], [7, 9], [6, 9]]
+[[9, 7], [9, 6], [9, 7]]
+[9, 10]
+[ 0.          0.          0.          0.14758362 -0.31283296  2.82842712]
+[array([[1.0009212]], dtype=float32), array([[0.92633486]], dtype=float32), array([[0.49736398]], dtype=float32)]
+--- 7 / 200 ---
+38.9 in 69 steps
+[[2, 3], [1, 3], [1, 2], [2, 2], [2, 3], [2, 4]]
+[[2, 6], [2, 7], [1, 7]]
+[9, 6]
+[ 1.          0.          1.         -0.38579975 -0.07797913  4.34613494]
+[array([[0.7335419]], dtype=float32), array([[0.801889]], dtype=float32), array([[0.82573617]], dtype=float32)]
+--- 8 / 200 ---
+33.9 in 68 steps
+[[3, 7], [2, 7], [2, 8], [3, 8], [3, 9]]
+[[9, 5], [8, 5], [7, 5]]
+[8, 9]
+[0.         0.         0.         0.60241638 0.5        2.        ]
+[array([[0.9506046]], dtype=float32), array([[0.6958329]], dtype=float32), array([[0.8974975]], dtype=float32)]
+--- 9 / 200 ---
+1.9 in 31 steps
+[[6, 3], [5, 3], [5, 4], [4, 4]]
+[[7, 6], [6, 6], [5, 6]]
+[7, 10]
+[0.         0.         0.         0.5        0.75       1.66666667]
+[array([[0.9927296]], dtype=float32), array([[0.8273576]], dtype=float32), array([[0.92891294]], dtype=float32)]
+--- 10 / 200 ---
+19.8 in 56 steps
+[[2, 10], [2, 9], [2, 8], [1, 8], [1, 7], [1, 6]]
+[[3, 8], [4, 8], [3, 8]]
+[3, 10]
+[ 0.          0.          0.         -0.25       -0.64758362  1.88561808]
+[array([[0.7904811]], dtype=float32), array([[1.0377955]], dtype=float32), array([[0.8819072]], dtype=float32)]
+--- 11 / 200 ---
+12.5 in 27 steps
+[[5, 8], [5, 7], [4, 7]]
+[[6, 6], [6, 5], [6, 4]]
+[5, 10]
+[0.  0.  0.  0.5 0.  1. ]
+[array([[1.0669963]], dtype=float32), array([[0.58478975]], dtype=float32), array([[0.72567046]], dtype=float32)]
+--- 12 / 200 ---
+57.1 in 91 steps
+[[4, 7], [4, 8], [4, 9], [5, 9], [6, 9], [7, 9], [7, 8]]
+[[5, 7], [4, 7], [5, 7]]
+[3, 5]
+[ 0.          0.          0.         -0.10241638  0.          1.49071198]
+[array([[0.6730977]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.84648955]], dtype=float32)]
+--- 13 / 200 ---
+-1.7 in 16 steps
+[[4, 10], [4, 9], [4, 8]]
+[[5, 8], [6, 8], [5, 8]]
+[5, 10]
+[ 0.          0.          0.         -0.25       -0.64758362  1.94365063]
+[array([[0.78965974]], dtype=float32), array([[1.0370221]], dtype=float32), array([[0.8779947]], dtype=float32)]
+--- 14 / 200 ---
+24.8 in 57 steps
+[[7, 10], [7, 9], [6, 9]]
+[[8, 5], [9, 5], [8, 5]]
+[10, 10]
+[ 0.          0.          0.          0.10241638 -0.35241638  4.12310563]
+[array([[0.9429723]], dtype=float32), array([[0.92077047]], dtype=float32), array([[0.45996094]], dtype=float32)]
+--- 15 / 200 ---
+14.2 in 61 steps
+[[6, 10], [6, 9], [5, 9]]
+[[7, 6], [7, 7], [7, 8]]
+[8, 10]
+[ 0.          0.          0.          0.14758362 -0.35241638  1.88561808]
+[array([[1.004417]], dtype=float32), array([[0.95056367]], dtype=float32), array([[0.509048]], dtype=float32)]
+--- 16 / 200 ---
+24.8 in 57 steps
+[[10, 4], [9, 4], [8, 4], [7, 4]]
+[[8, 6], [7, 6], [6, 6]]
+[10, 5]
+[0.         0.         0.         0.25       0.75       3.54338194]
+[array([[0.97255033]], dtype=float32), array([[1.0973121]], dtype=float32), array([[0.8201705]], dtype=float32)]
+--- 17 / 200 ---
+27.5 in 30 steps
+[[1, 7], [2, 7], [3, 7], [4, 7], [4, 6]]
+[[7, 9], [7, 8], [7, 7]]
+[2, 10]
+[ 0.    0.    0.    0.   -0.25  1.  ]
+[array([[0.8677857]], dtype=float32), array([[0.9322955]], dtype=float32), array([[0.6318317]], dtype=float32)]
+--- 18 / 200 ---
+7.8 in 23 steps
+[[4, 10], [4, 9], [3, 9]]
+[[6, 6], [6, 5], [5, 5]]
+[6, 10]
+[ 0.          0.          0.          0.14758362 -0.35241638  4.33333333]
+[array([[0.99977905]], dtype=float32), array([[0.9179375]], dtype=float32), array([[0.43911314]], dtype=float32)]
+--- 19 / 200 ---
+45.5 in 105 steps
+[[4, 6], [4, 7], [4, 8], [5, 8]]
+[[2, 6], [3, 6], [4, 6]]
+[1, 3]
+[ 0.          0.          0.         -0.20483276 -0.25        1.        ]
+[array([[0.8630937]], dtype=float32), array([[0.9324352]], dtype=float32), array([[0.85622454]], dtype=float32)]
+--- 20 / 200 ---
+24.9 in 56 steps
+[[8, 3], [8, 2], [7, 2], [7, 3]]
+[[6, 6], [6, 5], [6, 4]]
+[8, 6]
+[0.         0.         0.         0.5        0.25       1.37436854]
+[array([[0.9885076]], dtype=float32), array([[0.64115685]], dtype=float32), array([[0.82205284]], dtype=float32)]
+--- 21 / 200 ---
+55.0 in 112 steps
+[[5, 10], [5, 9], [4, 9], [4, 8], [5, 8]]
+[[4, 7], [5, 7], [6, 7], [7, 7]]
+[8, 2]
+[ 0.          0.          1.         -0.37111894 -0.5         2.5       ]
+[array([[1.2578712]], dtype=float32), array([[0.94692916]], dtype=float32), array([[0.9315297]], dtype=float32)]
+--- 22 / 200 ---
+33.9 in 68 steps
+[[10, 9], [9, 9], [8, 9], [7, 9], [6, 9], [5, 9]]
+[[5, 5], [5, 4], [5, 3]]
+[6, 1]
+[ 0.         0.         0.         0.        -0.5        2.4267033]
+[array([[0.8182579]], dtype=float32), array([[0.98693246]], dtype=float32), array([[0.5668417]], dtype=float32)]
+--- 23 / 200 ---
+23.4 in 71 steps
+[[7, 10], [7, 9], [6, 9]]
+[[9, 7], [9, 6], [8, 6]]
+[10, 10]
+[ 0.          0.          0.          0.10241638 -0.31283296  2.98142397]
+[array([[0.9409238]], dtype=float32), array([[0.92432636]], dtype=float32), array([[0.49556515]], dtype=float32)]
+--- 24 / 200 ---
+27.5 in 30 steps
+[[3, 10], [3, 9], [3, 8]]
+[[2, 5], [3, 5], [4, 5]]
+[2, 10]
+[ 0.          0.          0.          0.25       -1.          4.38431548]
+[array([[1.0802251]], dtype=float32), array([[1.1173642]], dtype=float32), array([[0.5042129]], dtype=float32)]
+--- 25 / 200 ---
+21.0 in 44 steps
+[[10, 6], [9, 6], [8, 6], [7, 6]]
+[[9, 5], [8, 5], [7, 5]]
+[5, 9]
+[ 0.          0.          0.          0.         -0.75        2.23606798]
+[array([[0.7953296]], dtype=float32), array([[1.0631273]], dtype=float32), array([[0.65971184]], dtype=float32)]
+--- 26 / 200 ---
+51.4 in 97 steps
+[[6, 8], [5, 8], [4, 8], [3, 8]]
+[[7, 9], [7, 8], [7, 7]]
+[7, 10]
+[ 0.          0.          0.          0.         -0.25        2.23606798]
+[array([[0.7953036]], dtype=float32), array([[0.91581964]], dtype=float32), array([[0.6220584]], dtype=float32)]
+--- 27 / 200 ---
+12.1 in 31 steps
+[[6, 5], [6, 6], [6, 7]]
+[[5, 6], [5, 5], [5, 4]]
+[6, 3]
+[0.         0.         0.         0.         0.25       1.66666667]
+[array([[0.6477472]], dtype=float32), array([[0.93239987]], dtype=float32), array([[0.8278796]], dtype=float32)]
+--- 28 / 200 ---
+3.1 in 19 steps
+[[6, 4], [6, 5], [5, 5]]
+[[7, 9], [7, 8], [7, 7]]
+[8, 1]
+[ 0.          0.          0.         -0.35241638  0.          1.        ]
+[array([[0.7776408]], dtype=float32), array([[0.8046521]], dtype=float32), array([[1.0754279]], dtype=float32)]
+--- 29 / 200 ---
+10.2 in 50 steps
+[[8, 5], [8, 6], [7, 6]]
+[[9, 5], [8, 5], [7, 5]]
+[10, 1]
+[ 0.          0.          0.         -0.37888106 -0.5         1.49071198]
+[array([[0.8760698]], dtype=float32), array([[0.8892312]], dtype=float32), array([[0.9044143]], dtype=float32)]
+--- 30 / 200 ---
+52.8 in 83 steps
+[[4, 6], [4, 5], [3, 5], [3, 4], [4, 4], [4, 3]]
+[[5, 6], [4, 6], [3, 6]]
+[8, 9]
+[0.         0.         1.         0.25       0.5        1.41421356]
+[array([[1.1773392]], dtype=float32), array([[1.0871282]], dtype=float32), array([[0.77393186]], dtype=float32)]
+--- 31 / 200 ---
+-3.4 in 33 steps
+[[10, 4], [9, 4], [9, 3]]
+[[7, 6], [6, 6], [5, 6]]
+[10, 5]
+[ 0.          0.          0.         -0.25        0.12111894  5.3748385 ]
+[array([[0.51843095]], dtype=float32), array([[0.8765912]], dtype=float32), array([[1.0557429]], dtype=float32)]
+--- 32 / 200 ---
+29.8 in 58 steps
+[[5, 6], [6, 6], [7, 6], [8, 6], [9, 6], [9, 5], [8, 5]]
+[[8, 7], [7, 7], [6, 7]]
+[1, 5]
+[0.         0.         0.         0.06283296 0.         1.49071198]
+[array([[0.80716586]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.69786227]], dtype=float32)]
+--- 33 / 200 ---
+4.6 in 55 steps
+[[9, 10], [9, 9], [8, 9]]
+[[8, 7], [7, 7], [6, 7]]
+[10, 10]
+[ 0.          0.          0.          0.25       -0.75        3.60555128]
+[array([[1.0988193]], dtype=float32), array([[1.0414733]], dtype=float32), array([[0.4483683]], dtype=float32)]
+--- 34 / 200 ---
+33.8 in 69 steps
+[[3, 4], [2, 4], [1, 4], [1, 5], [2, 5]]
+[[7, 7], [7, 6], [7, 5]]
+[10, 6]
+[0.         0.         0.         0.         0.25       2.23606798]
+[array([[0.6427454]], dtype=float32), array([[0.9272993]], dtype=float32), array([[0.82455635]], dtype=float32)]
+--- 35 / 200 ---
+49.6 in 64 steps
+[[8, 6], [8, 7], [7, 7], [6, 7], [5, 7], [4, 7], [3, 7]]
+[[5, 9], [5, 8], [5, 7]]
+[8, 2]
+[ 0.          0.          0.         -0.5        -0.5         1.90394328]
+[array([[0.8352865]], dtype=float32), array([[0.7298764]], dtype=float32), array([[0.9208736]], dtype=float32)]
+--- 36 / 200 ---
+25.5 in 101 steps
+[[5, 2], [4, 2], [4, 3], [3, 3], [3, 4], [2, 4], [2, 3]]
+[[4, 1], [5, 1], [5, 2], [5, 3]]
+[9, 8]
+[0.         0.         0.         0.77885794 0.25       1.11803399]
+[array([[1.0027276]], dtype=float32), array([[0.6128784]], dtype=float32), array([[0.8355423]], dtype=float32)]
+--- 37 / 200 ---
+20.5 in 49 steps
+[[5, 6], [4, 6], [4, 7], [5, 7], [5, 8]]
+[[7, 6], [7, 5], [7, 4]]
+[8, 5]
+[0.         0.         0.         0.42202087 0.         1.11803399]
+[array([[1.0628959]], dtype=float32), array([[0.67286897]], dtype=float32), array([[0.71842366]], dtype=float32)]
+--- 38 / 200 ---
+23.1 in 74 steps
+[[9, 10], [9, 9], [8, 9]]
+[[8, 7], [7, 7], [6, 7]]
+[10, 10]
+[ 0.          0.          0.          0.25       -0.75        3.54338194]
+[array([[1.0985413]], dtype=float32), array([[1.0421693]], dtype=float32), array([[0.4543385]], dtype=float32)]
+--- 39 / 200 ---
+41.8 in 91 steps
+[[7, 10], [7, 9], [6, 9], [6, 8], [5, 8]]
+[[7, 7], [7, 6], [7, 5]]
+[10, 10]
+[ 0.          0.          0.          0.10241638 -0.14758362  1.41421356]
+[array([[0.9042706]], dtype=float32), array([[0.8965311]], dtype=float32), array([[0.6293194]], dtype=float32)]
+--- 40 / 200 ---
+29.6 in 60 steps
+[[8, 8], [8, 7], [8, 6], [8, 5]]
+[[8, 9], [8, 8], [7, 8]]
+[8, 10]
+[0.         0.         0.         0.         0.         0.94280904]
+[array([[0.7843837]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.74696213]], dtype=float32)]
+--- 41 / 200 ---
+10.4 in 48 steps
+[[7, 10], [7, 9], [6, 9]]
+[[6, 7], [6, 6], [6, 5]]
+[9, 10]
+[ 0.          0.          0.          0.14758362 -0.14758362  2.3570226 ]
+[array([[0.95464194]], dtype=float32), array([[0.88393337]], dtype=float32), array([[0.59007955]], dtype=float32)]
+--- 42 / 200 ---
+2.6 in 24 steps
+[[10, 3], [9, 3], [9, 4], [8, 4]]
+[[7, 8], [6, 8], [7, 8]]
+[3, 2]
+[ 0.          0.          0.          0.5        -0.82797913  5.21749195]
+[array([[1.1140972]], dtype=float32), array([[0.7938245]], dtype=float32), array([[0.37939772]], dtype=float32)]
+--- 43 / 200 ---
+19.8 in 56 steps
+[[5, 10], [5, 9], [5, 8], [5, 7]]
+[[5, 3], [5, 2], [6, 2], [7, 2]]
+[9, 10]
+[ 0.          0.          0.          0.         -1.          7.15891053]
+[array([[0.7952632]], dtype=float32), array([[1.0988969]], dtype=float32), array([[0.6312337]], dtype=float32)]
+--- 44 / 200 ---
+34.1 in 66 steps
+[[10, 6], [9, 6], [8, 6]]
+[[6, 7], [5, 7], [6, 7]]
+[10, 5]
+[ 0.          0.          0.         -0.25        0.92202087  3.59010987]
+[array([[0.5773833]], dtype=float32), array([[1.17785]], dtype=float32), array([[1.0717211]], dtype=float32)]
+--- 45 / 200 ---
+41.8 in 91 steps
+[[4, 5], [4, 6], [5, 6]]
+[[9, 6], [8, 6], [7, 6]]
+[10, 2]
+[0.         0.         0.         0.81283296 0.39758362 2.03960781]
+[array([[0.93170846]], dtype=float32), array([[0.64451754]], dtype=float32), array([[0.8392267]], dtype=float32)]
+--- 46 / 200 ---
+34.5 in 62 steps
+[[6, 7], [5, 7], [5, 6], [4, 6], [3, 6], [3, 5], [2, 5]]
+[[8, 4], [7, 4], [6, 4]]
+[8, 6]
+[ 0.          0.          0.         -0.5        -0.25        2.23606798]
+[array([[0.7222302]], dtype=float32), array([[0.65097463]], dtype=float32), array([[0.98457134]], dtype=float32)]
+--- 47 / 200 ---
+38.7 in 71 steps
+[[3, 4], [3, 5], [3, 6]]
+[[7, 5], [7, 4], [7, 3]]
+[3, 3]
+[0.         0.         0.         0.         0.25       2.23606798]
+[array([[0.6427454]], dtype=float32), array([[0.9272993]], dtype=float32), array([[0.82455635]], dtype=float32)]
+--- 48 / 200 ---
+29.2 in 64 steps
+[[9, 10], [9, 9], [9, 8], [9, 7], [9, 6], [9, 5]]
+[[8, 7], [7, 7], [6, 7]]
+[8, 10]
+[0.         0.         0.         0.25       0.5        1.49071198]
+[array([[0.9269181]], dtype=float32), array([[1.0172234]], dtype=float32), array([[0.89451385]], dtype=float32)]
+--- 49 / 200 ---
+32.2 in 85 steps
+[[8, 5], [8, 6], [7, 6], [7, 7], [8, 7], [8, 8]]
+[[5, 9], [5, 8], [5, 7]]
+[9, 4]
+[ 1.          0.          0.         -0.35241638 -0.75        2.23606798]
+[array([[0.50690925]], dtype=float32), array([[0.7574991]], dtype=float32), array([[0.94569886]], dtype=float32)]
+--- 50 / 200 ---
+3.1 in 19 steps
+[[4, 10], [4, 9], [4, 8]]
+[[6, 8], [6, 9], [7, 9]]
+[5, 10]
+[ 0.          0.          0.         -0.25       -0.5         2.33333333]
+[array([[0.7911332]], dtype=float32), array([[0.98834753]], dtype=float32), array([[0.85948104]], dtype=float32)]
+--- 51 / 200 ---
+32.8 in 79 steps
+[[10, 4], [9, 4], [9, 5], [8, 5], [7, 5], [6, 5]]
+[[6, 7], [6, 6], [6, 5]]
+[10, 2]
+[ 0.          0.          0.          0.14758362 -0.5         3.        ]
+[array([[0.99636704]], dtype=float32), array([[0.9791902]], dtype=float32), array([[0.45651925]], dtype=float32)]
+--- 52 / 200 ---
+5.8 in 43 steps
+[[5, 10], [5, 9], [4, 9]]
+[[6, 6], [7, 6], [7, 5]]
+[7, 10]
+[ 0.          0.          0.          0.14758362 -0.31283296  4.47213595]
+[array([[0.9864822]], dtype=float32), array([[0.90442544]], dtype=float32), array([[0.44459474]], dtype=float32)]
+--- 53 / 200 ---
+0.7 in 43 steps
+[[7, 10], [7, 9], [6, 9]]
+[[9, 7], [9, 6], [9, 5]]
+[9, 10]
+[ 0.          0.          0.          0.14758362 -0.31283296  4.47213595]
+[array([[0.9864822]], dtype=float32), array([[0.90442544]], dtype=float32), array([[0.44459474]], dtype=float32)]
+--- 54 / 200 ---
+45.0 in 59 steps
+[[10, 5], [9, 5], [9, 4]]
+[[6, 6], [7, 6], [6, 6]]
+[10, 6]
+[ 0.          0.          0.         -0.25        0.35241638  2.74873708]
+[array([[0.5125696]], dtype=float32), array([[0.9626414]], dtype=float32), array([[1.1035056]], dtype=float32)]
+--- 55 / 200 ---
+10.9 in 43 steps
+[[3, 8], [3, 7], [3, 6]]
+[[4, 8], [3, 8], [3, 9]]
+[3, 10]
+[0.         0.         0.         0.         0.         1.33333333]
+[array([[0.72695446]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.7350051]], dtype=float32)]
+--- 56 / 200 ---
+28.8 in 68 steps
+[[10, 3], [9, 3], [8, 3], [7, 3]]
+[[6, 9], [5, 9], [5, 8]]
+[10, 8]
+[0.         0.         0.         0.         0.68716704 6.40312424]
+[array([[0.6224619]], dtype=float32), array([[1.0553576]], dtype=float32), array([[0.8538004]], dtype=float32)]
+--- 57 / 200 ---
+16.3 in 40 steps
+[[10, 7], [9, 7], [8, 7]]
+[[6, 7], [5, 7], [5, 6]]
+[10, 6]
+[ 0.          0.          0.         -0.25        1.          4.12310563]
+[array([[0.59059316]], dtype=float32), array([[1.2065837]], dtype=float32), array([[1.0699178]], dtype=float32)]
+--- 58 / 200 ---
+23.9 in 66 steps
+[[4, 7], [4, 6], [4, 5], [4, 4]]
+[[3, 6], [3, 7], [4, 7]]
+[3, 8]
+[0.         0.         0.         0.14758362 0.25       1.        ]
+[array([[0.8507506]], dtype=float32), array([[0.93766975]], dtype=float32), array([[0.8573519]], dtype=float32)]
+--- 59 / 200 ---
+11.2 in 40 steps
+[[2, 10], [2, 9], [3, 9], [4, 9]]
+[[4, 8], [5, 8], [5, 7]]
+[2, 8]
+[ 0.          0.          0.         -0.5         0.89758362  3.60555128]
+[array([[0.55939734]], dtype=float32), array([[0.9125774]], dtype=float32), array([[1.0968158]], dtype=float32)]
+--- 60 / 200 ---
+43.9 in 70 steps
+[[7, 10], [7, 9], [6, 9]]
+[[7, 7], [8, 7], [9, 7]]
+[9, 10]
+[ 0.          0.          0.          0.14758362 -0.35241638  2.3570226 ]
+[array([[1.0065246]], dtype=float32), array([[0.9442802]], dtype=float32), array([[0.49391407]], dtype=float32)]
+--- 61 / 200 ---
+30.7 in 49 steps
+[[10, 9], [9, 9], [8, 9], [8, 8], [7, 8]]
+[[7, 5], [6, 5], [5, 5]]
+[1, 6]
+[ 0.          0.          0.          0.         -0.5         4.67855628]
+[array([[0.8283256]], dtype=float32), array([[0.956917]], dtype=float32), array([[0.57915306]], dtype=float32)]
+--- 62 / 200 ---
+14.8 in 55 steps
+[[5, 8], [5, 7], [5, 6]]
+[[5, 9], [5, 8], [4, 8]]
+[4, 10]
+[0.         0.         0.         0.10241638 0.         1.41421356]
+[array([[0.85924035]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.70278394]], dtype=float32)]
+--- 63 / 200 ---
+35.1 in 56 steps
+[[3, 10], [3, 9], [4, 9], [4, 8]]
+[[4, 4], [4, 3], [5, 3]]
+[4, 10]
+[ 0.          0.          0.         -0.75        0.55256846  6.32455532]
+[array([[0.43026328]], dtype=float32), array([[0.5768121]], dtype=float32), array([[1.0980215]], dtype=float32)]
+--- 64 / 200 ---
+12.0 in 32 steps
+[[5, 9], [4, 9], [4, 8]]
+[[7, 4], [6, 4], [5, 4]]
+[6, 10]
+[ 0.          0.          0.         -0.35241638 -0.5         2.23606798]
+[array([[0.7993177]], dtype=float32), array([[0.9078064]], dtype=float32), array([[0.91862017]], dtype=float32)]
+--- 65 / 200 ---
+60.7 in 106 steps
+[[5, 6], [5, 7], [4, 7]]
+[[5, 8], [5, 7], [5, 6]]
+[9, 1]
+[ 0.          0.          0.         -0.31283296  0.          1.        ]
+[array([[0.77299535]], dtype=float32), array([[0.85413337]], dtype=float32), array([[1.0766472]], dtype=float32)]
+--- 66 / 200 ---
+35.2 in 55 steps
+[[2, 5], [2, 4], [3, 4], [3, 3]]
+[[8, 6], [7, 6], [6, 6]]
+[1, 8]
+[ 0.          0.          0.         -0.42202087 -0.5         1.80277564]
+[array([[0.8343265]], dtype=float32), array([[0.8292675]], dtype=float32), array([[0.91622406]], dtype=float32)]
+--- 67 / 200 ---
+30.1 in 55 steps
+[[6, 7], [5, 7], [4, 7]]
+[[7, 6], [7, 7], [6, 7]]
+[10, 6]
+[ 0.          0.          0.         -0.06283296  0.          1.37436854]
+[array([[0.6779746]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.8040396]], dtype=float32)]
+--- 68 / 200 ---
+12.4 in 28 steps
+[[5, 10], [5, 9], [5, 8]]
+[[7, 5], [6, 5], [7, 5]]
+[6, 10]
+[ 0.          0.          0.         -0.25       -0.92202087  4.47213595]
+[array([[0.7408775]], dtype=float32), array([[1.0841727]], dtype=float32), array([[0.9247845]], dtype=float32)]
+--- 69 / 200 ---
+-3.8 in 37 steps
+[[9, 10], [9, 9], [9, 8]]
+[[9, 7], [8, 7], [7, 7]]
+[10, 10]
+[ 0.          0.          0.         -0.25       -1.          3.16227766]
+[array([[0.7557235]], dtype=float32), array([[1.124606]], dtype=float32), array([[1.0027084]], dtype=float32)]
+--- 70 / 200 ---
+45.9 in 101 steps
+[[10, 7], [9, 7], [9, 8]]
+[[9, 4], [9, 5], [9, 6]]
+[10, 6]
+[0.         0.         0.         0.25       0.         1.37436854]
+[array([[1.0512402]], dtype=float32), array([[0.8671619]], dtype=float32), array([[0.7027405]], dtype=float32)]
+--- 71 / 200 ---
+47.8 in 82 steps
+[[9, 10], [9, 9], [8, 9]]
+[[6, 6], [5, 6], [6, 6]]
+[10, 10]
+[ 0.          0.          0.          0.25       -0.79516724  4.7375568 ]
+[array([[1.099892]], dtype=float32), array([[1.0532914]], dtype=float32), array([[0.4064392]], dtype=float32)]
+--- 72 / 200 ---
+11.3 in 39 steps
+[[2, 6], [2, 7], [2, 8], [3, 8], [3, 7]]
+[[1, 6], [2, 6], [3, 6]]
+[2, 4]
+[1.         0.         0.         0.         0.         1.41421356]
+[array([[0.5245849]], dtype=float32), array([[0.879639]], dtype=float32), array([[0.759742]], dtype=float32)]
+--- 73 / 200 ---
+64.2 in 122 steps
+[[10, 4], [9, 4], [9, 3], [8, 3], [8, 2], [7, 2]]
+[[5, 8], [6, 8], [6, 7]]
+[10, 6]
+[ 0.          0.          0.         -0.14758362  0.20483276  4.24264069]
+[array([[0.52485985]], dtype=float32), array([[0.8929396]], dtype=float32), array([[0.97301817]], dtype=float32)]
+--- 74 / 200 ---
+24.3 in 62 steps
+[[2, 3], [1, 3], [1, 2], [2, 2], [2, 3], [3, 3], [4, 3]]
+[[7, 7], [7, 8], [6, 8]]
+[7, 6]
+[ 1.          0.          1.         -0.35241638 -0.27885794  7.54247233]
+[array([[0.6615429]], dtype=float32), array([[0.82312053]], dtype=float32), array([[0.8765912]], dtype=float32)]
+--- 75 / 200 ---
+61.2 in 101 steps
+[[6, 10], [6, 9], [5, 9]]
+[[6, 5], [5, 5], [5, 6]]
+[8, 10]
+[ 0.          0.          0.          0.14758362 -0.57797913  3.80058475]
+[array([[0.9930604]], dtype=float32), array([[0.99149287]], dtype=float32), array([[0.4308795]], dtype=float32)]
+--- 76 / 200 ---
+7.0 in 31 steps
+[[10, 8], [9, 8], [8, 8], [7, 8]]
+[[5, 7], [5, 6], [5, 5]]
+[3, 5]
+[ 0.          0.          0.          0.         -0.5         3.01846171]
+[array([[0.82090366]], dtype=float32), array([[0.9790448]], dtype=float32), array([[0.570077]], dtype=float32)]
+--- 77 / 200 ---
+28.3 in 73 steps
+[[4, 4], [4, 3], [3, 3], [3, 2], [4, 2], [5, 2]]
+[[5, 7], [5, 6], [5, 5]]
+[5, 10]
+[0.         0.         1.         0.45483276 0.75       2.12132034]
+[array([[1.1226438]], dtype=float32), array([[0.9113156]], dtype=float32), array([[0.76655495]], dtype=float32)]
+--- 78 / 200 ---
+53.7 in 125 steps
+[[4, 5], [3, 5], [3, 6], [3, 7]]
+[[9, 5], [8, 5], [7, 5]]
+[5, 5]
+[0.         0.         0.         0.5        0.75       1.66666667]
+[array([[0.9927296]], dtype=float32), array([[0.8273576]], dtype=float32), array([[0.92891294]], dtype=float32)]
+--- 79 / 200 ---
+36.7 in 91 steps
+[[4, 5], [4, 4], [5, 4], [6, 4], [6, 3]]
+[[7, 9], [7, 8], [7, 7]]
+[7, 7]
+[ 0.          0.          0.         -0.75       -0.25        1.76776695]
+[array([[0.79015803]], dtype=float32), array([[0.6034107]], dtype=float32), array([[0.9896982]], dtype=float32)]
+--- 80 / 200 ---
+47.5 in 85 steps
+[[5, 10], [5, 9], [4, 9]]
+[[6, 1], [5, 1], [5, 2]]
+[6, 10]
+[ 0.          0.          0.          0.25       -0.5         7.34090518]
+[array([[1.1375957]], dtype=float32), array([[0.95556915]], dtype=float32), array([[0.34947318]], dtype=float32)]
+--- 81 / 200 ---
+2.0 in 30 steps
+[[10, 2], [9, 2], [9, 3], [8, 3]]
+[[7, 8], [6, 8], [5, 8]]
+[9, 6]
+[ 0.          0.          0.          0.5        -0.85241638  6.74948558]
+[array([[1.1282668]], dtype=float32), array([[0.80061567]], dtype=float32), array([[0.32848954]], dtype=float32)]
+--- 82 / 200 ---
+38.9 in 69 steps
+[[7, 4], [7, 5], [7, 6], [7, 7], [6, 7], [5, 7], [5, 6]]
+[[8, 5], [7, 5], [6, 5]]
+[6, 1]
+[ 0.          0.          0.         -0.07797913  0.25        1.37436854]
+[array([[0.5908123]], dtype=float32), array([[0.9353891]], dtype=float32), array([[0.929463]], dtype=float32)]
+--- 83 / 200 ---
+60.0 in 113 steps
+[[8, 7], [7, 7], [7, 8], [6, 8], [6, 7]]
+[[9, 7], [8, 7], [8, 6]]
+[9, 3]
+[0.         0.         1.         0.14758362 0.5        1.41421356]
+[array([[1.1571165]], dtype=float32), array([[1.1365199]], dtype=float32), array([[0.7532502]], dtype=float32)]
+--- 84 / 200 ---
+44.1 in 68 steps
+[[8, 6], [8, 5], [7, 5], [6, 5], [6, 4], [5, 4]]
+[[6, 6], [6, 5], [6, 4]]
+[9, 3]
+[0.         0.         0.         0.5        0.5        3.04630924]
+[array([[0.9567118]], dtype=float32), array([[0.723844]], dtype=float32), array([[0.8476918]], dtype=float32)]
+--- 85 / 200 ---
+1.8 in 32 steps
+[[6, 10], [6, 9], [5, 9]]
+[[8, 5], [8, 6], [9, 6]]
+[9, 10]
+[ 0.          0.          0.          0.10241638 -0.31283296  3.80058475]
+[array([[0.9337279]], dtype=float32), array([[0.91340756]], dtype=float32), array([[0.47056985]], dtype=float32)]
+--- 86 / 200 ---
+26.9 in 87 steps
+[[10, 9], [9, 9], [8, 9], [7, 9], [7, 8], [6, 8]]
+[[8, 7], [7, 7], [6, 7]]
+[3, 6]
+[ 0.          0.          0.          0.         -0.5         3.16227766]
+[array([[0.8215466]], dtype=float32), array([[0.9771278]], dtype=float32), array([[0.57086325]], dtype=float32)]
+--- 87 / 200 ---
+1.2 in 38 steps
+[[10, 5], [9, 5], [9, 6]]
+[[9, 3], [8, 3], [7, 3]]
+[10, 3]
+[ 0.          0.          0.          0.14758362 -0.14758362  2.40370085]
+[array([[0.9542319]], dtype=float32), array([[0.88331115]], dtype=float32), array([[0.5885809]], dtype=float32)]
+--- 88 / 200 ---
+5.5 in 46 steps
+[[6, 3], [6, 4], [5, 4]]
+[[7, 6], [7, 5], [7, 4]]
+[10, 1]
+[ 0.          0.          0.         -0.20483276  0.          0.33333333]
+[array([[0.87920654]], dtype=float32), array([[0.8942454]], dtype=float32), array([[0.9796508]], dtype=float32)]
+--- 89 / 200 ---
+39.0 in 68 steps
+[[10, 5], [9, 5], [8, 5]]
+[[7, 6], [6, 6], [5, 6]]
+[10, 6]
+[0.         0.         0.         0.25       0.89758362 4.12310563]
+[array([[1.024275]], dtype=float32), array([[1.1489048]], dtype=float32), array([[0.8070706]], dtype=float32)]
+--- 90 / 200 ---
+34.2 in 65 steps
+[[10, 3], [9, 3], [8, 3], [8, 4], [7, 4], [6, 4], [5, 4], [4, 4], [4, 5]]
+[[6, 8], [5, 8], [6, 8]]
+[10, 4]
+[0.         0.         0.         0.25       0.71477671 6.20035841]
+[array([[0.9478697]], dtype=float32), array([[1.0694516]], dtype=float32), array([[0.7603621]], dtype=float32)]
+--- 91 / 200 ---
+24.1 in 64 steps
+[[6, 6], [5, 6], [5, 7]]
+[[7, 6], [7, 5], [7, 4]]
+[10, 3]
+[0.         0.         0.         0.32797913 0.         1.        ]
+[array([[1.0586473]], dtype=float32), array([[0.77853596]], dtype=float32), array([[0.72920245]], dtype=float32)]
+--- 92 / 200 ---
+24.7 in 58 steps
+[[6, 10], [6, 9], [5, 9], [5, 8]]
+[[9, 4], [8, 4], [8, 3]]
+[9, 10]
+[ 0.          0.          0.          0.10241638 -0.37888106  6.12825877]
+[array([[0.933433]], dtype=float32), array([[0.91410905]], dtype=float32), array([[0.4702174]], dtype=float32)]
+--- 93 / 200 ---
+14.5 in 58 steps
+[[10, 3], [9, 3], [9, 4], [8, 4]]
+[[8, 9], [9, 9], [8, 9]]
+[9, 7]
+[0.         0.         0.         0.5        1.         6.08276253]
+[array([[1.0909669]], dtype=float32), array([[0.90152454]], dtype=float32), array([[0.78972834]], dtype=float32)]
+--- 94 / 200 ---
+35.4 in 104 steps
+[[6, 10], [6, 9], [6, 8], [6, 7], [6, 6]]
+[[7, 8], [7, 7], [8, 7]]
+[8, 10]
+[ 0.          0.          0.         -0.35241638 -0.85241638  2.86744176]
+[array([[0.773693]], dtype=float32), array([[0.9976573]], dtype=float32), array([[0.9794821]], dtype=float32)]
+--- 95 / 200 ---
+2.5 in 25 steps
+[[10, 5], [9, 5], [8, 5], [7, 5]]
+[[5, 9], [4, 9], [5, 9]]
+[4, 10]
+[0.         0.         0.         0.         0.78522329 5.67646212]
+[array([[0.6524651]], dtype=float32), array([[1.0989628]], dtype=float32), array([[0.8430135]], dtype=float32)]
+--- 96 / 200 ---
+11.7 in 35 steps
+[[10, 2], [9, 2], [9, 3], [8, 3]]
+[[7, 7], [7, 8], [8, 8]]
+[2, 7]
+[ 0.          0.          0.          0.5        -0.89758362  6.22718056]
+[array([[1.1189704]], dtype=float32), array([[0.81498504]], dtype=float32), array([[0.35672975]], dtype=float32)]
+--- 97 / 200 ---
+6.1 in 40 steps
+[[7, 9], [6, 9], [6, 8]]
+[[8, 9], [7, 9], [7, 8]]
+[10, 10]
+[ 0.          0.          0.         -0.42202087 -0.5         1.41421356]
+[array([[0.8984678]], dtype=float32), array([[0.8368207]], dtype=float32), array([[0.9022084]], dtype=float32)]
+--- 98 / 200 ---
+9.9 in 53 steps
+[[9, 10], [9, 9], [9, 8]]
+[[7, 6], [7, 7], [6, 7]]
+[10, 10]
+[ 0.          0.          0.         -0.25        0.75        3.60555128]
+[array([[0.5208004]], dtype=float32), array([[1.107765]], dtype=float32), array([[1.0829638]], dtype=float32)]
+--- 99 / 200 ---
+23.1 in 23 steps
+[[4, 10], [4, 9], [4, 8], [4, 7]]
+[[7, 9], [7, 8], [7, 7]]
+[5, 9]
+[ 0.          0.          0.          0.         -0.60241638  3.60555128]
+[array([[0.81448466]], dtype=float32), array([[1.0013927]], dtype=float32), array([[0.5705539]], dtype=float32)]
+--- 100 / 200 ---
+24.5 in 60 steps
+[[6, 10], [6, 9], [6, 8], [6, 7]]
+[[5, 5], [5, 6], [6, 6]]
+[10, 6]
+[0.         0.         0.         0.         0.89758362 3.34995854]
+[array([[0.7040592]], dtype=float32), array([[1.1623102]], dtype=float32), array([[0.821542]], dtype=float32)]
+--- 101 / 200 ---
+36.4 in 94 steps
+[[2, 4], [1, 4], [1, 3], [2, 3], [2, 4], [2, 5]]
+[[5, 6], [5, 5], [4, 5]]
+[6, 5]
+[ 1.          0.          1.         -0.43716704 -0.42202087  3.59010987]
+[array([[0.7649691]], dtype=float32), array([[0.8031635]], dtype=float32), array([[0.8765912]], dtype=float32)]
+--- 102 / 200 ---
+34.4 in 63 steps
+[[6, 7], [5, 7], [5, 6], [4, 6], [4, 5], [4, 4], [3, 4]]
+[[6, 5], [6, 4], [6, 3]]
+[2, 9]
+[ 0.          0.          0.         -0.5        -0.5         1.79505494]
+[array([[0.8532612]], dtype=float32), array([[0.731993]], dtype=float32), array([[0.91694593]], dtype=float32)]
+--- 103 / 200 ---
+11.5 in 37 steps
+[[10, 7], [9, 7], [8, 7]]
+[[8, 6], [9, 6], [8, 6]]
+[10, 6]
+[ 0.          0.          0.         -0.25       -0.5         1.49071198]
+[array([[0.84688157]], dtype=float32), array([[0.9995791]], dtype=float32), array([[0.84624255]], dtype=float32)]
+--- 104 / 200 ---
+20.0 in 54 steps
+[[10, 9], [9, 9], [8, 9], [7, 9], [6, 9], [6, 8]]
+[[6, 6], [7, 6], [6, 6]]
+[10, 7]
+[ 0.          0.          0.         -0.35241638 -0.68716704  4.24264069]
+[array([[0.7620551]], dtype=float32), array([[0.9230386]], dtype=float32), array([[0.9199566]], dtype=float32)]
+--- 105 / 200 ---
+20.7 in 47 steps
+[[6, 5], [6, 6], [7, 6], [7, 5]]
+[[5, 6], [6, 6], [6, 5]]
+[1, 4]
+[ 0.          0.          0.          0.12111894 -0.          1.        ]
+[array([[0.913154]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.7332337]], dtype=float32)]
+--- 106 / 200 ---
+6.4 in 37 steps
+[[6, 2], [6, 1], [5, 1], [5, 2]]
+[[6, 7], [6, 6], [6, 5]]
+[8, 7]
+[0.         0.         1.         0.39758362 0.5        3.        ]
+[array([[0.98537946]], dtype=float32), array([[0.8686275]], dtype=float32), array([[0.7011438]], dtype=float32)]
+--- 107 / 200 ---
+57.8 in 84 steps
+[[2, 8], [2, 9], [3, 9], [3, 8], [4, 8]]
+[[5, 5], [5, 4], [5, 3]]
+[8, 5]
+[0.         0.         0.         0.81283296 0.5        2.        ]
+[array([[0.9294348]], dtype=float32), array([[0.6910745]], dtype=float32), array([[0.8931771]], dtype=float32)]
+--- 108 / 200 ---
+15.2 in 51 steps
+[[8, 2], [8, 1], [7, 1], [7, 2]]
+[[9, 2], [8, 2], [8, 3]]
+[9, 7]
+[0.         0.         1.         0.44743154 0.5        2.        ]
+[array([[1.0732268]], dtype=float32), array([[0.8108707]], dtype=float32), array([[0.77355325]], dtype=float32)]
+--- 109 / 200 ---
+22.3 in 82 steps
+[[4, 3], [4, 4], [4, 5], [5, 5]]
+[[2, 3], [3, 3], [4, 3]]
+[3, 2]
+[ 0.          0.          0.         -0.14758362 -0.25        1.        ]
+[array([[0.8563752]], dtype=float32), array([[0.9323962]], dtype=float32), array([[0.7935085]], dtype=float32)]
+--- 110 / 200 ---
+5.3 in 48 steps
+[[10, 3], [9, 3], [8, 3], [7, 3]]
+[[6, 7], [5, 7], [5, 6]]
+[4, 8]
+[0.   0.   0.   0.   0.75 5.  ]
+[array([[0.6424948]], dtype=float32), array([[1.0916969]], dtype=float32), array([[0.84117055]], dtype=float32)]
+--- 111 / 200 ---
+9.5 in 57 steps
+[[7, 10], [7, 9], [6, 9]]
+[[7, 3], [8, 3], [7, 3]]
+[10, 10]
+[ 0.          0.          0.          0.10241638 -0.44743154  6.        ]
+[array([[0.95547557]], dtype=float32), array([[0.9356993]], dtype=float32), array([[0.467687]], dtype=float32)]
+--- 112 / 200 ---
+12.1 in 31 steps
+[[6, 7], [5, 7], [4, 7]]
+[[7, 7], [6, 7], [5, 7]]
+[10, 7]
+[0.         0.         0.         0.         0.         0.47140452]
+[array([[0.85966915]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.75398576]], dtype=float32)]
+--- 113 / 200 ---
+29.8 in 58 steps
+[[8, 10], [8, 9], [8, 8], [8, 7]]
+[[5, 7], [4, 7], [5, 7]]
+[7, 10]
+[0.         0.         0.         0.25       0.64758362 4.1766547 ]
+[array([[0.93757534]], dtype=float32), array([[1.0544416]], dtype=float32), array([[0.80594593]], dtype=float32)]
+--- 114 / 200 ---
+44.7 in 62 steps
+[[5, 3], [5, 4], [5, 5], [5, 6]]
+[[5, 1], [5, 2], [5, 3], [4, 3]]
+[8, 6]
+[0.         0.         0.         0.         0.         1.37436854]
+[array([[0.726594]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.73310316]], dtype=float32)]
+--- 115 / 200 ---
+29.8 in 58 steps
+[[10, 7], [9, 7], [8, 7], [7, 7]]
+[[2, 4], [3, 4], [4, 4]]
+[5, 4]
+[ 0.          0.          0.          0.         -0.85241638  5.96284794]
+[array([[0.8029478]], dtype=float32), array([[1.0563526]], dtype=float32), array([[0.6010949]], dtype=float32)]
+--- 116 / 200 ---
+25.1 in 54 steps
+[[3, 10], [3, 9], [3, 8], [2, 8], [1, 8]]
+[[4, 5], [4, 4], [4, 3]]
+[4, 10]
+[ 0.          0.          0.         -0.25       -0.93716704  5.70574759]
+[array([[0.7227007]], dtype=float32), array([[1.072192]], dtype=float32), array([[0.9191439]], dtype=float32)]
+--- 117 / 200 ---
+34.1 in 66 steps
+[[10, 5], [9, 5], [8, 5], [7, 5]]
+[[8, 3], [9, 3], [8, 3]]
+[10, 4]
+[ 0.          0.          0.         -0.25       -0.5         2.23606798]
+[array([[0.7925099]], dtype=float32), array([[0.989644]], dtype=float32), array([[0.85894924]], dtype=float32)]
+--- 118 / 200 ---
+-3.0 in 29 steps
+[[6, 10], [6, 9], [6, 8]]
+[[8, 4], [8, 3], [9, 3]]
+[7, 10]
+[ 0.          0.          0.         -0.25       -0.89758362  6.43773597]
+[array([[0.71421516]], dtype=float32), array([[1.0569483]], dtype=float32), array([[0.9027833]], dtype=float32)]
+--- 119 / 200 ---
+3.4 in 16 steps
+[[4, 10], [4, 9], [4, 8], [4, 7]]
+[[9, 2], [9, 3], [8, 3]]
+[3, 7]
+[ 0.          0.          0.          0.         -0.77885794  7.21110255]
+[array([[0.81502414]], dtype=float32), array([[1.0302144]], dtype=float32), array([[0.585558]], dtype=float32)]
+--- 120 / 200 ---
+7.0 in 31 steps
+[[7, 10], [7, 9], [6, 9]]
+[[9, 4], [9, 5], [9, 4]]
+[9, 10]
+[ 0.          0.          0.          0.14758362 -0.35241638  5.38516481]
+[array([[0.9905393]], dtype=float32), array([[0.91008615]], dtype=float32), array([[0.41476738]], dtype=float32)]
+--- 121 / 200 ---
+6.0 in 41 steps
+[[5, 10], [5, 9], [5, 8]]
+[[4, 5], [5, 5], [5, 4]]
+[4, 10]
+[ 0.    0.    0.    0.25 -1.    5.  ]
+[array([[1.0829778]], dtype=float32), array([[1.1168053]], dtype=float32), array([[0.44508743]], dtype=float32)]
+--- 122 / 200 ---
+14.4 in 59 steps
+[[7, 9], [7, 8], [7, 7], [7, 6]]
+[[8, 5], [7, 5], [6, 5]]
+[1, 7]
+[0.         0.         0.         0.         0.         0.94280904]
+[array([[0.7843837]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.74696213]], dtype=float32)]
+--- 123 / 200 ---
+20.8 in 46 steps
+[[5, 2], [4, 2], [3, 2], [3, 3], [2, 3], [2, 4]]
+[[7, 4], [6, 4], [5, 4]]
+[9, 4]
+[0.         0.         0.         0.         0.25       2.23606798]
+[array([[0.6427454]], dtype=float32), array([[0.9272993]], dtype=float32), array([[0.82455635]], dtype=float32)]
+--- 124 / 200 ---
+15.2 in 51 steps
+[[10, 6], [9, 6], [9, 7], [8, 7]]
+[[7, 6], [7, 5], [6, 5]]
+[10, 3]
+[ 0.          0.          0.          0.10241638 -0.35241638  3.16227766]
+[array([[0.9514127]], dtype=float32), array([[0.9335776]], dtype=float32), array([[0.47117528]], dtype=float32)]
+--- 125 / 200 ---
+15.3 in 50 steps
+[[7, 10], [7, 9], [6, 9]]
+[[8, 5], [7, 5], [6, 5]]
+[10, 10]
+[ 0.          0.          0.          0.10241638 -0.25        2.23606798]
+[array([[0.9282999]], dtype=float32), array([[0.9157498]], dtype=float32), array([[0.5489928]], dtype=float32)]
+--- 126 / 200 ---
+39.7 in 112 steps
+[[10, 3], [9, 3], [9, 4], [9, 5]]
+[[7, 5], [6, 5], [7, 5]]
+[10, 2]
+[ 0.          0.          0.          0.25       -0.68716704  3.29983165]
+[array([[1.1030009]], dtype=float32), array([[1.026264]], dtype=float32), array([[0.44489548]], dtype=float32)]
+--- 127 / 200 ---
+1.6 in 34 steps
+[[8, 9], [7, 9], [7, 8]]
+[[9, 9], [8, 9], [8, 8]]
+[10, 10]
+[ 0.          0.          0.         -0.39758362 -0.5         1.49071198]
+[array([[0.8803054]], dtype=float32), array([[0.8658649]], dtype=float32), array([[0.9046542]], dtype=float32)]
+--- 128 / 200 ---
+60.0 in 113 steps
+[[7, 4], [8, 4], [8, 5], [8, 6], [7, 6], [7, 7], [6, 7]]
+[[9, 6], [8, 6], [7, 6]]
+[4, 3]
+[ 0.          0.          0.         -0.42202087 -0.75        2.23606798]
+[array([[0.792106]], dtype=float32), array([[0.8932904]], dtype=float32), array([[0.9588056]], dtype=float32)]
+--- 129 / 200 ---
+70.6 in 109 steps
+[[2, 10], [2, 9], [3, 9]]
+[[1, 3], [2, 3], [3, 3]]
+[1, 10]
+[ 0.          0.          0.         -0.25        0.5         5.70574759]
+[array([[0.46334386]], dtype=float32), array([[0.9942252]], dtype=float32), array([[1.1119754]], dtype=float32)]
+--- 130 / 200 ---
+26.2 in 43 steps
+[[4, 10], [4, 9], [4, 8]]
+[[5, 9], [5, 8], [5, 7]]
+[5, 10]
+[ 0.          0.          0.         -0.25       -0.75        2.23606798]
+[array([[0.7806712]], dtype=float32), array([[1.0632977]], dtype=float32), array([[0.9183998]], dtype=float32)]
+--- 131 / 200 ---
+30.9 in 98 steps
+[[7, 10], [7, 9], [6, 9]]
+[[9, 3], [9, 4], [8, 4]]
+[10, 10]
+[ 0.          0.          0.          0.10241638 -0.37888106  4.85340659]
+[array([[0.9446318]], dtype=float32), array([[0.918833]], dtype=float32), array([[0.46324748]], dtype=float32)]
+--- 132 / 200 ---
+15.7 in 46 steps
+[[5, 10], [5, 9], [6, 9]]
+[[4, 5], [3, 5], [4, 5]]
+[3, 10]
+[ 0.          0.          0.         -0.14758362  0.35241638  4.33333333]
+[array([[0.49469712]], dtype=float32), array([[0.9479599]], dtype=float32), array([[1.0106317]], dtype=float32)]
+--- 133 / 200 ---
+36.1 in 97 steps
+[[9, 6], [9, 7], [9, 8], [8, 8], [7, 8]]
+[[7, 6], [8, 6], [9, 6]]
+[7, 2]
+[ 0.          0.          0.         -0.12111894 -0.25        1.20185043]
+[array([[0.8172736]], dtype=float32), array([[0.9296876]], dtype=float32), array([[0.7617692]], dtype=float32)]
+--- 134 / 200 ---
+27.2 in 84 steps
+[[5, 10], [5, 9], [4, 9]]
+[[6, 5], [6, 4], [6, 3]]
+[6, 10]
+[ 0.          0.          0.          0.25       -0.43716704  5.8214164 ]
+[array([[1.1363506]], dtype=float32), array([[0.9401584]], dtype=float32), array([[0.3903719]], dtype=float32)]
+--- 135 / 200 ---
+20.1 in 53 steps
+[[6, 5], [6, 6], [5, 6]]
+[[5, 8], [5, 7], [5, 6]]
+[5, 2]
+[ 0.          0.          0.         -0.57797913 -0.5         2.        ]
+[array([[0.8313291]], dtype=float32), array([[0.67612344]], dtype=float32), array([[0.92533875]], dtype=float32)]
+--- 136 / 200 ---
+1.0 in 40 steps
+[[6, 10], [6, 9], [5, 9]]
+[[8, 9], [8, 8], [8, 7]]
+[8, 10]
+[ 0.          0.          0.          0.14758362 -0.14758362  2.40370085]
+[array([[0.9542319]], dtype=float32), array([[0.88331115]], dtype=float32), array([[0.5885809]], dtype=float32)]
+--- 137 / 200 ---
+64.8 in 116 steps
+[[8, 10], [8, 9], [9, 9], [9, 8], [9, 7], [8, 7], [8, 6], [7, 6], [6, 6], [6, 5], [5, 5], [5, 4], [6, 4]]
+[[6, 9], [6, 8], [6, 7]]
+[6, 10]
+[ 0.          0.          0.         -0.14758362  0.14758362  2.82842712]
+[array([[0.58343333]], dtype=float32), array([[0.88394976]], dtype=float32), array([[0.9547689]], dtype=float32)]
+--- 138 / 200 ---
+15.6 in 47 steps
+[[4, 10], [4, 9], [3, 9]]
+[[5, 5], [4, 5], [4, 4]]
+[6, 10]
+[ 0.          0.          0.          0.14758362 -0.5         4.33333333]
+[array([[1.0023282]], dtype=float32), array([[0.96141785]], dtype=float32), array([[0.42565787]], dtype=float32)]
+--- 139 / 200 ---
+29.0 in 66 steps
+[[5, 7], [6, 7], [6, 8], [7, 8], [7, 9], [6, 9]]
+[[5, 8], [5, 7], [5, 6]]
+[1, 2]
+[ 0.    0.    0.   -0.5  -0.25  1.  ]
+[array([[0.89773357]], dtype=float32), array([[0.6750024]], dtype=float32), array([[0.9644856]], dtype=float32)]
+--- 140 / 200 ---
+23.2 in 73 steps
+[[8, 0], [8, 1], [7, 1], [6, 1]]
+[[7, 2], [8, 2], [8, 3]]
+[4, 2]
+[0.         0.         1.         0.92202087 0.5        2.        ]
+[array([[0.8439329]], dtype=float32), array([[0.8203648]], dtype=float32), array([[0.8693892]], dtype=float32)]
+--- 141 / 200 ---
+32.6 in 81 steps
+[[10, 3], [9, 3], [8, 3]]
+[[6, 5], [5, 5], [5, 6]]
+[10, 2]
+[ 0.          0.          0.         -0.25        0.85241638  4.63081466]
+[array([[0.5306575]], dtype=float32), array([[1.1436744]], dtype=float32), array([[1.0825794]], dtype=float32)]
+--- 142 / 200 ---
+19.5 in 59 steps
+[[7, 10], [7, 9], [6, 9]]
+[[9, 4], [8, 4], [7, 4]]
+[10, 10]
+[ 0.          0.          0.          0.10241638 -0.43716704  4.67855628]
+[array([[0.9556951]], dtype=float32), array([[0.9383356]], dtype=float32), array([[0.4607363]], dtype=float32)]
+--- 143 / 200 ---
+15.8 in 45 steps
+[[10, 7], [9, 7], [8, 7]]
+[[6, 9], [7, 9], [7, 8]]
+[10, 8]
+[0.         0.         0.         0.25       0.75       2.68741925]
+[array([[0.97632766]], dtype=float32), array([[1.103154]], dtype=float32), array([[0.8394417]], dtype=float32)]
+--- 144 / 200 ---
+21.4 in 40 steps
+[[10, 1], [9, 1], [8, 1], [7, 1], [6, 1]]
+[[9, 2], [9, 3], [8, 3]]
+[2, 6]
+[0.         0.         1.         0.         0.5        2.02758751]
+[array([[1.0079966]], dtype=float32), array([[1.0627706]], dtype=float32), array([[0.6813057]], dtype=float32)]
+--- 145 / 200 ---
+0.6 in 44 steps
+[[9, 10], [9, 9], [8, 9]]
+[[6, 5], [5, 5], [5, 4]]
+[10, 10]
+[ 0.          0.          0.          0.25       -0.75        6.40312424]
+[array([[1.1113269]], dtype=float32), array([[1.0355649]], dtype=float32), array([[0.34838653]], dtype=float32)]
+--- 146 / 200 ---
+45.8 in 102 steps
+[[10, 4], [9, 4], [9, 3], [8, 3]]
+[[8, 6], [7, 6], [6, 6]]
+[10, 6]
+[ 0.          0.          0.         -0.14758362  0.25        3.60555128]
+[array([[0.5266908]], dtype=float32), array([[0.9157338]], dtype=float32), array([[0.99353445]], dtype=float32)]
+--- 147 / 200 ---
+36.1 in 46 steps
+[[4, 10], [4, 9], [4, 8], [4, 7]]
+[[4, 6], [5, 6], [5, 5]]
+[2, 10]
+[ 0.          0.          0.          0.         -0.89758362  4.12310563]
+[array([[0.7907342]], dtype=float32), array([[1.0814549]], dtype=float32), array([[0.62766075]], dtype=float32)]
+--- 148 / 200 ---
+31.9 in 88 steps
+[[10, 3], [9, 3], [8, 3], [7, 3]]
+[[9, 9], [8, 9], [7, 9]]
+[7, 7]
+[0.         0.         0.         0.         0.55256846 6.32455532]
+[array([[0.6235182]], dtype=float32), array([[1.005141]], dtype=float32), array([[0.8620445]], dtype=float32)]
+--- 149 / 200 ---
+21.2 in 42 steps
+[[6, 9], [6, 8], [6, 7]]
+[[8, 4], [7, 4], [6, 4]]
+[7, 10]
+[ 0.          0.          0.         -0.14758362 -0.25        1.        ]
+[array([[0.8563752]], dtype=float32), array([[0.9323962]], dtype=float32), array([[0.7935085]], dtype=float32)]
+--- 150 / 200 ---
+11.3 in 39 steps
+[[7, 4], [7, 5], [6, 5], [5, 5]]
+[[8, 3], [7, 3], [6, 3]]
+[8, 2]
+[ 0.          0.          0.         -0.39758362 -0.75        2.13437475]
+[array([[0.79192054]], dtype=float32), array([[0.92579836]], dtype=float32), array([[0.96641076]], dtype=float32)]
+--- 151 / 200 ---
+26.4 in 92 steps
+[[4, 10], [4, 9], [5, 9]]
+[[3, 7], [2, 7], [1, 7]]
+[3, 10]
+[ 0.          0.          0.         -0.25        0.25        3.07318149]
+[array([[0.5369146]], dtype=float32), array([[0.9209898]], dtype=float32), array([[1.1121219]], dtype=float32)]
+--- 152 / 200 ---
+15.4 in 49 steps
+[[8, 10], [8, 9], [7, 9]]
+[[9, 7], [8, 7], [7, 7]]
+[10, 10]
+[ 0.          0.          0.          0.14758362 -0.5         2.23606798]
+[array([[0.9929515]], dtype=float32), array([[0.9893728]], dtype=float32), array([[0.47420132]], dtype=float32)]
+--- 153 / 200 ---
+18.2 in 72 steps
+[[7, 5], [7, 4], [6, 4]]
+[[8, 5], [7, 5], [6, 5]]
+[10, 10]
+[0.         0.         0.         0.35241638 0.5        1.49071198]
+[array([[0.93287414]], dtype=float32), array([[0.9013852]], dtype=float32), array([[0.91045314]], dtype=float32)]
+--- 154 / 200 ---
+25.7 in 48 steps
+[[10, 6], [9, 6], [8, 6]]
+[[4, 5], [3, 5], [2, 5]]
+[10, 7]
+[ 0.          0.          0.          0.25       -0.94743154  6.41179469]
+[array([[1.0939317]], dtype=float32), array([[1.0967355]], dtype=float32), array([[0.37634838]], dtype=float32)]
+--- 155 / 200 ---
+14.8 in 55 steps
+[[7, 10], [7, 9], [6, 9]]
+[[5, 9], [5, 8], [5, 7]]
+[10, 10]
+[ 0.          0.          0.          0.10241638 -0.25        2.23606798]
+[array([[0.9282999]], dtype=float32), array([[0.9157498]], dtype=float32), array([[0.5489928]], dtype=float32)]
+--- 156 / 200 ---
+7.6 in 25 steps
+[[5, 10], [5, 9], [4, 9]]
+[[8, 7], [8, 6], [7, 6], [7, 5]]
+[8, 10]
+[ 0.          0.          0.          0.10241638 -0.25        4.30116263]
+[array([[0.91015923]], dtype=float32), array([[0.8882237]], dtype=float32), array([[0.49426958]], dtype=float32)]
+--- 157 / 200 ---
+20.6 in 48 steps
+[[7, 6], [7, 5], [6, 5], [5, 5]]
+[[8, 7], [7, 7], [6, 7]]
+[7, 9]
+[0.         0.         0.         0.5        0.5        2.26384628]
+[array([[0.9483751]], dtype=float32), array([[0.72918415]], dtype=float32), array([[0.879822]], dtype=float32)]
+--- 158 / 200 ---
+38.9 in 69 steps
+[[6, 10], [6, 9], [6, 8]]
+[[7, 3], [7, 4], [7, 3]]
+[7, 10]
+[ 0.          0.          0.         -0.25       -0.93716704  5.8214164 ]
+[array([[0.7210636]], dtype=float32), array([[1.0708656]], dtype=float32), array([[0.9182345]], dtype=float32)]
+--- 159 / 200 ---
+21.6 in 38 steps
+[[4, 10], [4, 9], [4, 8]]
+[[4, 5], [4, 4], [3, 4]]
+[5, 10]
+[ 0.         0.         0.        -0.25      -1.         5.3748385]
+[array([[0.7244087]], dtype=float32), array([[1.0951142]], dtype=float32), array([[0.93858045]], dtype=float32)]
+--- 160 / 200 ---
+7.1 in 30 steps
+[[7, 6], [7, 7], [7, 8], [6, 8]]
+[[9, 6], [8, 6], [7, 6]]
+[9, 2]
+[0.         0.         0.         0.12111894 0.25       1.37436854]
+[array([[0.80759805]], dtype=float32), array([[0.93444216]], dtype=float32), array([[0.8298322]], dtype=float32)]
+--- 161 / 200 ---
+24.7 in 58 steps
+[[8, 6], [8, 5], [8, 4], [7, 4], [6, 4]]
+[[9, 7], [9, 6], [8, 6], [7, 6]]
+[1, 9]
+[ 0.          0.          0.         -0.14758362 -0.25        1.        ]
+[array([[0.8563752]], dtype=float32), array([[0.9323962]], dtype=float32), array([[0.7935085]], dtype=float32)]
+--- 162 / 200 ---
+18.9 in 65 steps
+[[8, 4], [9, 4], [9, 3], [8, 3], [7, 3]]
+[[6, 4], [7, 4], [8, 4]]
+[5, 6]
+[0.         0.         0.         0.35241638 0.5        1.66666667]
+[array([[0.9347489]], dtype=float32), array([[0.90018433]], dtype=float32), array([[0.89895064]], dtype=float32)]
+--- 163 / 200 ---
+21.7 in 37 steps
+[[4, 3], [5, 3], [6, 3], [6, 4]]
+[[6, 6], [6, 5], [6, 4]]
+[7, 9]
+[ 0.          0.          0.          0.         -0.25        1.66666667]
+[array([[0.8003055]], dtype=float32), array([[0.92340934]], dtype=float32), array([[0.6240459]], dtype=float32)]
+--- 164 / 200 ---
+13.5 in 68 steps
+[[6, 5], [5, 5], [5, 6]]
+[[6, 6], [6, 5], [7, 5]]
+[10, 2]
+[0.         0.         0.         0.32797913 0.5        2.        ]
+[array([[0.9370976]], dtype=float32), array([[0.9255492]], dtype=float32), array([[0.87335676]], dtype=float32)]
+--- 165 / 200 ---
+-3.2 in 31 steps
+[[10, 2], [9, 2], [9, 3]]
+[[8, 4], [8, 5], [7, 5]]
+[10, 1]
+[ 0.          0.          0.          0.25       -0.89758362  3.72677996]
+[array([[1.0863291]], dtype=float32), array([[1.0857797]], dtype=float32), array([[0.5138422]], dtype=float32)]
+--- 166 / 200 ---
+42.6 in 83 steps
+[[5, 10], [5, 9], [6, 9], [7, 9]]
+[[3, 7], [4, 7], [5, 7]]
+[3, 10]
+[ 0.          0.          0.         -0.14758362  0.35241638  2.        ]
+[array([[0.53525376]], dtype=float32), array([[0.96886134]], dtype=float32), array([[0.9964006]], dtype=float32)]
+--- 167 / 200 ---
+7.7 in 24 steps
+[[6, 10], [6, 9], [5, 9]]
+[[6, 6], [6, 5], [6, 4]]
+[9, 1]
+[0.         0.         0.         0.14758362 0.         2.33333333]
+[array([[0.90981984]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.6601279]], dtype=float32)]
+--- 168 / 200 ---
+5.2 in 49 steps
+[[6, 6], [6, 7], [6, 8]]
+[[4, 6], [5, 6], [6, 6]]
+[3, 1]
+[ 0.          0.          0.         -0.14758362 -0.25        1.        ]
+[array([[0.8563752]], dtype=float32), array([[0.9323962]], dtype=float32), array([[0.7935085]], dtype=float32)]
+--- 169 / 200 ---
+27.7 in 79 steps
+[[8, 10], [8, 9], [7, 9], [6, 9], [5, 9], [4, 9], [4, 8]]
+[[6, 7], [5, 7], [5, 6]]
+[9, 10]
+[ 0.          0.          0.          0.25       -0.81283296  4.24264069]
+[array([[1.0961193]], dtype=float32), array([[1.0590689]], dtype=float32), array([[0.4280855]], dtype=float32)]
+--- 170 / 200 ---
+20.3 in 51 steps
+[[4, 10], [4, 9], [3, 9], [2, 9]]
+[[6, 5], [6, 4], [7, 4]]
+[6, 10]
+[ 0.          0.          0.          0.14758362 -0.37888106  5.83095189]
+[array([[0.99469805]], dtype=float32), array([[0.91709644]], dtype=float32), array([[0.4156289]], dtype=float32)]
+--- 171 / 200 ---
+29.6 in 60 steps
+[[5, 10], [5, 9], [4, 9]]
+[[8, 8], [8, 7], [8, 6]]
+[8, 10]
+[ 0.          0.          0.          0.10241638 -0.18716704  4.24264069]
+[array([[0.89150196]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.51992095]], dtype=float32)]
+--- 172 / 200 ---
+-2.4 in 23 steps
+[[7, 10], [7, 9], [6, 9]]
+[[7, 8], [8, 8], [9, 8]]
+[9, 10]
+[ 0.          0.          0.          0.14758362 -0.25        1.66666667]
+[array([[0.9919552]], dtype=float32), array([[0.9233087]], dtype=float32), array([[0.56415975]], dtype=float32)]
+--- 173 / 200 ---
+1.9 in 31 steps
+[[8, 10], [8, 9], [7, 9]]
+[[6, 4], [6, 5], [6, 6]]
+[9, 10]
+[ 0.          0.          0.          0.25       -0.64758362  4.1766547 ]
+[array([[1.1104164]], dtype=float32), array([[1.0075684]], dtype=float32), array([[0.40925795]], dtype=float32)]
+--- 174 / 200 ---
+32.7 in 80 steps
+[[7, 3], [7, 4], [6, 4], [6, 5]]
+[[7, 9], [7, 8], [7, 7]]
+[7, 2]
+[ 0.          0.          0.         -0.5        -0.75        2.23606798]
+[array([[0.7972894]], dtype=float32), array([[0.7958658]], dtype=float32), array([[0.9624696]], dtype=float32)]
+--- 175 / 200 ---
+30.4 in 52 steps
+[[2, 10], [2, 9], [3, 9], [3, 8], [4, 8]]
+[[5, 6], [4, 6], [4, 5], [4, 4]]
+[1, 3]
+[ 0.          0.          0.         -0.5         0.68716704  4.80884602]
+[array([[0.46289968]], dtype=float32), array([[0.81182]], dtype=float32), array([[1.1148211]], dtype=float32)]
+--- 176 / 200 ---
+5.9 in 42 steps
+[[10, 3], [9, 3], [8, 3], [7, 3]]
+[[7, 5], [7, 4], [6, 4]]
+[7, 2]
+[0.         0.         0.         0.         0.85241638 2.98142397]
+[array([[0.6890725]], dtype=float32), array([[1.1485242]], dtype=float32), array([[0.82222176]], dtype=float32)]
+--- 177 / 200 ---
+20.7 in 47 steps
+[[4, 10], [4, 9], [4, 8]]
+[[3, 6], [3, 7], [4, 7]]
+[3, 10]
+[0.         0.         0.         0.25       0.85241638 2.10818511]
+[array([[1.0165536]], dtype=float32), array([[1.1456556]], dtype=float32), array([[0.8640078]], dtype=float32)]
+--- 178 / 200 ---
+19.4 in 60 steps
+[[7, 10], [7, 9], [6, 9], [6, 8]]
+[[9, 6], [9, 7], [9, 6]]
+[9, 10]
+[ 0.          0.          0.          0.14758362 -0.25        3.60555128]
+[array([[0.97492325]], dtype=float32), array([[0.8974649]], dtype=float32), array([[0.5019142]], dtype=float32)]
+--- 179 / 200 ---
+34.9 in 58 steps
+[[8, 10], [8, 9], [7, 9], [7, 8], [6, 8]]
+[[7, 6], [7, 5], [7, 4]]
+[5, 4]
+[ 0.          0.          0.          0.5        -0.57797913  5.09901951]
+[array([[1.1337116]], dtype=float32), array([[0.71592116]], dtype=float32), array([[0.3782139]], dtype=float32)]
+--- 180 / 200 ---
+99.6 in 125 steps
+[[10, 9], [9, 9], [8, 9], [7, 9], [6, 9], [6, 8], [5, 8]]
+[[9, 7], [9, 8], [9, 7]]
+[10, 7]
+[ 0.          0.          0.         -0.35241638 -0.5         1.69967317]
+[array([[0.83558226]], dtype=float32), array([[0.91823334]], dtype=float32), array([[0.91161215]], dtype=float32)]
+--- 181 / 200 ---
+62.6 in 87 steps
+[[5, 10], [5, 9], [5, 8], [5, 7], [5, 6], [5, 5], [6, 5], [6, 6], [7, 6]]
+[[5, 2], [4, 2], [5, 2]]
+[4, 6]
+[0.         0.         0.         0.         0.95483276 7.34090518]
+[array([[0.7075043]], dtype=float32), array([[1.1573439]], dtype=float32), array([[0.8421726]], dtype=float32)]
+--- 182 / 200 ---
+31.1 in 45 steps
+[[6, 10], [6, 9], [6, 8]]
+[[7, 4], [7, 3], [8, 3]]
+[5, 10]
+[ 0.          0.          0.          0.25       -0.94743154  6.14636297]
+[array([[1.092745]], dtype=float32), array([[1.0974455]], dtype=float32), array([[0.38603014]], dtype=float32)]
+--- 183 / 200 ---
+16.9 in 34 steps
+[[2, 3], [1, 3], [1, 4], [2, 4], [2, 3], [3, 3]]
+[[2, 9], [1, 9], [1, 8]]
+[5, 2]
+[1.         0.         1.         0.42202087 1.         5.34373985]
+[array([[0.96184963]], dtype=float32), array([[0.9097621]], dtype=float32), array([[0.5681903]], dtype=float32)]
+--- 184 / 200 ---
+18.7 in 67 steps
+[[5, 10], [5, 9], [4, 9]]
+[[7, 7], [8, 7], [7, 7]]
+[7, 10]
+[ 0.          0.          0.          0.14758362 -0.18716704  3.29983165]
+[array([[0.95843744]], dtype=float32), array([[0.8830283]], dtype=float32), array([[0.541228]], dtype=float32)]
+--- 185 / 200 ---
+24.6 in 59 steps
+[[10, 9], [9, 9], [9, 8], [9, 7]]
+[[9, 6], [8, 6], [7, 6]]
+[1, 2]
+[ 0.          0.          0.         -0.5         0.89758362  3.60555128]
+[array([[0.55939734]], dtype=float32), array([[0.9125774]], dtype=float32), array([[1.0968158]], dtype=float32)]
+--- 186 / 200 ---
+70.3 in 112 steps
+[[4, 4], [4, 3], [5, 3], [5, 2], [6, 2]]
+[[7, 8], [7, 7], [7, 6]]
+[2, 9]
+[ 0.          0.          0.         -0.39758362 -0.75        2.23606798]
+[array([[0.79048145]], dtype=float32), array([[0.9238215]], dtype=float32), array([[0.95933783]], dtype=float32)]
+--- 187 / 200 ---
+23.6 in 69 steps
+[[7, 5], [6, 5], [5, 5]]
+[[5, 7], [5, 6], [5, 5]]
+[6, 6]
+[0.         0.         0.         0.07797913 0.10241638 1.90394328]
+[array([[0.7919556]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.72679275]], dtype=float32)]
+--- 188 / 200 ---
+79.8 in 170 steps
+[[6, 10], [6, 9], [5, 9]]
+[[8, 6], [7, 6], [6, 6]]
+[9, 10]
+[ 0.          0.          0.          0.10241638 -0.39758362  3.34995854]
+[array([[0.9532505]], dtype=float32), array([[0.9443829]], dtype=float32), array([[0.46065447]], dtype=float32)]
+--- 189 / 200 ---
+15.9 in 44 steps
+[[3, 10], [3, 9], [4, 9]]
+[[2, 3], [3, 3], [2, 3]]
+[2, 10]
+[ 0.          0.          0.         -0.25        0.5         6.00925213]
+[array([[0.45907083]], dtype=float32), array([[0.9925184]], dtype=float32), array([[1.1138266]], dtype=float32)]
+--- 190 / 200 ---
+-2.8 in 27 steps
+[[6, 10], [6, 9], [6, 8]]
+[[8, 9], [8, 8], [7, 8]]
+[8, 10]
+[ 0.          0.          0.         -0.35241638 -0.64758362  1.94365063]
+[array([[0.7979162]], dtype=float32), array([[0.95625776]], dtype=float32), array([[0.9304229]], dtype=float32)]
+--- 191 / 200 ---
+39.4 in 64 steps
+[[4, 5], [4, 6], [4, 7]]
+[[5, 4], [5, 5], [4, 5]]
+[5, 2]
+[0.         0.         0.         0.07797913 0.25       1.20185043]
+[array([[0.7530929]], dtype=float32), array([[0.9361927]], dtype=float32), array([[0.8436501]], dtype=float32)]
+--- 192 / 200 ---
+14.7 in 56 steps
+[[7, 10], [7, 9], [6, 9]]
+[[8, 9], [7, 9], [7, 8]]
+[10, 10]
+[0.         0.         0.         0.10241638 0.         1.        ]
+[array([[0.89185965]], dtype=float32), array([[0.8765912]], dtype=float32), array([[0.7329917]], dtype=float32)]
+--- 193 / 200 ---
+22.0 in 34 steps
+[[6, 10], [6, 9], [5, 9]]
+[[8, 2], [7, 2], [8, 2]]
+[8, 10]
+[ 0.          0.          0.          0.14758362 -0.45483276  7.12585278]
+[array([[1.0064973]], dtype=float32), array([[0.937174]], dtype=float32), array([[0.42068166]], dtype=float32)]
+--- 194 / 200 ---
+-2.5 in 24 steps
+[[5, 10], [5, 9], [6, 9]]
+[[2, 6], [2, 7], [3, 7]]
+[4, 10]
+[ 0.          0.          0.         -0.25        0.18716704  2.82842712]
+[array([[0.56536734]], dtype=float32), array([[0.89941174]], dtype=float32), array([[1.0913804]], dtype=float32)]
+--- 195 / 200 ---
+53.7 in 125 steps
+[[4, 10], [4, 9], [5, 9], [5, 8], [6, 8], [6, 7]]
+[[5, 5], [4, 5], [5, 5]]
+[9, 9]
+[ 0.          0.          0.         -1.          0.5         4.12310563]
+[array([[0.4531312]], dtype=float32), array([[0.6383874]], dtype=float32), array([[0.8446506]], dtype=float32)]
+--- 196 / 200 ---
+10.6 in 46 steps
+[[6, 5], [6, 6], [5, 6]]
+[[8, 5], [7, 5], [6, 5]]
+[10, 1]
+[ 0.          0.          0.         -0.28522329 -0.25        1.        ]
+[array([[0.87252796]], dtype=float32), array([[0.93249005]], dtype=float32), array([[0.94429183]], dtype=float32)]
+--- 197 / 200 ---
+2.0 in 30 steps
+[[10, 2], [9, 2], [8, 2], [8, 3]]
+[[5, 9], [6, 9], [6, 8]]
+[10, 1]
+[0.         0.         0.         0.         0.62888106 6.70820393]
+[array([[0.62446046]], dtype=float32), array([[1.0305744]], dtype=float32), array([[0.85943866]], dtype=float32)]
+--- 198 / 200 ---
+16.4 in 39 steps
+[[5, 7], [4, 7], [3, 7]]
+[[5, 9], [5, 8], [5, 7]]
+[9, 6]
+[ 0.          0.          0.         -0.06283296  0.25        1.37436854]
+[array([[0.5914583]], dtype=float32), array([[0.9353171]], dtype=float32), array([[0.91236347]], dtype=float32)]
+--- 199 / 200 ---
+74.7 in 119 steps
+[[2, 4], [2, 5], [2, 6], [1, 6], [1, 7], [2, 7], [2, 8], [3, 8], [4, 8]]
+[[3, 3], [3, 4], [2, 4]]
+[3, 1]
+[0.         0.         0.         0.07797913 0.25       1.        ]
+[array([[0.7715001]], dtype=float32), array([[0.93800086]], dtype=float32), array([[0.8587811]], dtype=float32)]
+Average steps: 60.005
+Counter({31: 7, 58: 7, 68: 6, 43: 5, 69: 5, 56: 5, 30: 5, 55: 5, 40: 5, 46: 5, 51: 4, 62: 4, 91: 4, 64: 4, 49: 4, 60: 4, 48: 4, 66: 4, 59: 4, 37: 4, 57: 3, 23: 3, 112: 3, 44: 3, 101: 3, 24: 3, 39: 3, 125: 3, 47: 3, 34: 3, 74: 2, 29: 2, 88: 2, 67: 2, 27: 2, 16: 2, 71: 2, 97: 2, 19: 2, 50: 2, 83: 2, 85: 2, 79: 2, 32: 2, 82: 2, 73: 2, 113: 2, 87: 2, 38: 2, 65: 2, 25: 2, 53: 2, 54: 2, 84: 2, 45: 2, 42: 2, 61: 1, 105: 1, 33: 1, 70: 1, 106: 1, 28: 1, 122: 1, 104: 1, 35: 1, 94: 1, 63: 1, 41: 1, 109: 1, 98: 1, 116: 1, 81: 1, 102: 1, 92: 1, 72: 1, 80: 1, 52: 1, 170: 1, 119: 1})
+Average score: 25.085999999999977
+Counter({26.19999999999998: 2, 53.699999999999875: 2, 1.9999999999999987: 2, 59.99999999999989: 2, 15.20000000000001: 2, 29.79999999999997: 2, 28.19999999999998: 1, 30.499999999999993: 1, 24.299999999999965: 1, 7.200000000000008: 1, 31.899999999999935: 1, 28.899999999999945: 1, 38.89999999999994: 1, 33.89999999999999: 1, 1.8999999999999986: 1, 19.799999999999976: 1, 12.500000000000009: 1, 57.09999999999993: 1, -1.7000000000000004: 1, 24.79999999999996: 1, 14.200000000000005: 1, 24.799999999999976: 1, 27.5: 1, 7.800000000000004: 1, 45.499999999999936: 1, 24.899999999999956: 1, 54.99999999999987: 1, 33.899999999999984: 1, 23.39999999999995: 1, 27.499999999999982: 1, 20.999999999999964: 1, 51.399999999999906: 1, 12.100000000000001: 1, 3.099999999999999: 1, 10.200000000000015: 1, 52.79999999999994: 1, -3.4000000000000017: 1, 29.799999999999983: 1, 4.600000000000016: 1, 33.79999999999996: 1, 49.59999999999995: 1, 25.49999999999999: 1, 20.499999999999993: 1, 23.099999999999955: 1, 41.799999999999905: 1, 29.599999999999973: 1, 10.400000000000015: 1, 2.599999999999999: 1, 19.80000000000002: 1, 34.09999999999997: 1, 41.79999999999992: 1, 34.49999999999996: 1, 38.699999999999946: 1, 29.199999999999996: 1, 32.19999999999995: 1, 3.1: 1, 32.79999999999993: 1, 5.800000000000001: 1, 0.6999999999999975: 1, 44.99999999999995: 1, 10.900000000000013: 1, 28.799999999999955: 1, 16.299999999999986: 1, 23.899999999999977: 1, 11.200000000000014: 1, 43.89999999999995: 1, 30.69999999999998: 1, 14.800000000000004: 1, 35.09999999999997: 1, 12.000000000000007: 1, 60.69999999999991: 1, 35.19999999999997: 1, 30.099999999999962: 1, 12.400000000000007: 1, -3.800000000000002: 1, 45.899999999999906: 1, 47.799999999999926: 1, 11.300000000000004: 1, 64.19999999999993: 1, 24.300000000000004: 1, 61.19999999999993: 1, 7.0: 1, 28.299999999999965: 1, 36.699999999999974: 1, 47.49999999999992: 1, 38.89999999999996: 1, 44.099999999999945: 1, 1.8000000000000007: 1, 26.899999999999977: 1, 1.1999999999999975: 1, 5.500000000000007: 1, 38.99999999999993: 1, 34.19999999999999: 1, 24.099999999999966: 1, 24.699999999999967: 1, 14.50000000000001: 1, 35.399999999999956: 1, 2.499999999999999: 1, 11.700000000000003: 1, 6.10000000000001: 1, 9.900000000000016: 1, 23.1: 1, 24.499999999999964: 1, 36.39999999999997: 1, 34.399999999999956: 1, 11.500000000000009: 1, 20.000000000000007: 1, 20.699999999999985: 1, 6.400000000000002: 1, 57.79999999999992: 1, 22.299999999999947: 1, 5.299999999999999: 1, 9.50000000000001: 1, 12.100000000000009: 1, 44.699999999999974: 1, 25.099999999999994: 1, 34.09999999999996: 1, -3.0000000000000013: 1, 3.3999999999999995: 1, 7.000000000000007: 1, 6.000000000000011: 1, 14.4: 1, 20.800000000000004: 1, 15.299999999999976: 1, 39.699999999999896: 1, 1.5999999999999996: 1, 70.59999999999997: 1, 30.8999999999999: 1, 15.699999999999982: 1, 36.09999999999993: 1, 27.199999999999974: 1, 20.099999999999966: 1, 0.9999999999999992: 1, 64.79999999999993: 1, 15.600000000000001: 1, 28.99999999999997: 1, 23.199999999999946: 1, 32.59999999999993: 1, 19.499999999999968: 1, 15.799999999999988: 1, 21.400000000000006: 1, 0.5999999999999993: 1, 45.7999999999999: 1, 36.099999999999966: 1, 31.899999999999928: 1, 21.19999999999998: 1, 11.300000000000006: 1, 26.399999999999928: 1, 15.399999999999986: 1, 18.19999999999999: 1, 25.69999999999999: 1, 14.799999999999985: 1, 7.600000000000005: 1, 20.6: 1, 38.89999999999997: 1, 21.599999999999987: 1, 7.1: 1, 24.699999999999996: 1, 18.900000000000016: 1, 21.699999999999996: 1, 13.500000000000009: 1, -3.2000000000000015: 1, 42.59999999999994: 1, 7.700000000000006: 1, 5.200000000000001: 1, 27.69999999999999: 1, 20.299999999999976: 1, 29.599999999999955: 1, -2.400000000000001: 1, 1.9: 1, 32.69999999999993: 1, 30.39999999999997: 1, 5.899999999999998: 1, 20.69999999999998: 1, 19.399999999999967: 1, 34.89999999999996: 1, 99.60000000000018: 1, 62.59999999999992: 1, 31.09999999999997: 1, 16.900000000000006: 1, 18.7: 1, 24.599999999999966: 1, 70.29999999999993: 1, 23.599999999999987: 1, 79.80000000000008: 1, 15.899999999999995: 1, -2.800000000000001: 1, 39.39999999999995: 1, 14.699999999999978: 1, 21.999999999999986: 1, -2.500000000000001: 1, 10.600000000000012: 1, 16.399999999999995: 1, 74.70000000000007: 1})
+
+==========
+SCORES: m.avg per 100, mean: 24.363999999999983, max: 99.60000000000018
+LENGTH: m.avg per 100, mean: 4.03, max: 13
+ENEMY LENGTH: m.avg per 100, mean: 3.04, max: 4
+
+Process finished with exit code 0
