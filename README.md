@@ -1,6 +1,4 @@
-#Snake PvP
-
-
+# Snake PvP
 
 
 #### Running ε-Greedy Q-Learning Agent
